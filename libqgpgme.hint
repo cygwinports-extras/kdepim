@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin qt3 libgpgme++
+external-source: kdepim
+sdesc: "GPGME Qt3 library"
+ldesc: "GPGME Qt3 library"

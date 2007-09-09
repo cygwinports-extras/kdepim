@@ -1,0 +1,5 @@
+category: KDE Devel
+requires: cygwin kdelibs4 qt3
+external-source: kdepim
+sdesc: "KDE C++ template generator"
+ldesc: "KDE C++ template generator"

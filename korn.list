@@ -1,0 +1,11 @@
+usr/bin/korn.exe
+usr/lib/kconf_update_bin/korn-3-4-config_change.exe
+usr/share/applications/kde/KOrn.desktop
+usr/share/apps/kconf_update/korn-3-4-config_change.upd
+usr/share/apps/kconf_update/korn-3-5-metadata-update.pl
+usr/share/apps/kconf_update/korn-3-5-ssl-update.pl
+usr/share/apps/kconf_update/korn-3-5-update.upd
+usr/share/doc/HTML/en/korn/
+usr/share/icons/hicolor/*/apps/korn.png
+usr/share/doc/Cygwin/korn-3*.README
+usr/share/doc/korn-3.*/

@@ -1,0 +1,4 @@
+usr/bin/networkstatustestservice.exe
+usr/lib/kde3/kded_networkstatus.*
+usr/share/services/kded/networkstatus.desktop
+usr/share/doc/Cygwin/networkstatus-3*.README

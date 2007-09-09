@@ -1,0 +1,203 @@
+knode
+------------------------------------------
+KDE news reader
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  kdelibs4-3.5.7-1
+  libkdepim-3.5.7-1
+  libkmime-3.5.7-1
+  libkpgp-3.5.7-1
+  qt3-3.3.8-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  perl-5.8.7-5
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://pim.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/3.5.7/src/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdepim-3.5.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdepim-3.5.7-X.cygport all
+
+This will create:
+  /usr/src/kdepim-3.5.7-X-src.tar.bz2
+  /usr/src/kdepim-3.5.7-X.tar.bz2
+
+  /usr/src/akregator-3.5.7-X.tar.bz2
+  /usr/src/kaddressbook-3.5.7-X.tar.bz2
+  /usr/src/kalarm-3.5.7-X.tar.bz2
+  /usr/src/kandy-3.5.7-X.tar.bz2
+  /usr/src/karm-3.5.7-X.tar.bz2
+  /usr/src/kdepim-kfile-plugins-3.5.7-X.tar.bz2
+  /usr/src/kdepim-kioslaves-3.5.7-X.tar.bz2
+  /usr/src/kdepim-kresources-3.5.7-X.tar.bz2
+  /usr/src/kdepim-wizards-3.5.7-X.tar.bz2
+  /usr/src/kitchensync-3.5.7-X.tar.bz2
+  /usr/src/kleopatra-3.5.7-X.tar.bz2
+  /usr/src/kmail-3.5.7-X.tar.bz2
+  /usr/src/knode-3.5.7-X.tar.bz2
+  /usr/src/knotes-3.5.7-X.tar.bz2
+  /usr/src/kode-3.5.7-X.tar.bz2
+  /usr/src/konsolekalendar-3.5.7-X.tar.bz2
+  /usr/src/kontact-3.5.7-X.tar.bz2
+  /usr/src/korganizer-3.5.7-X.tar.bz2
+  /usr/src/korn-3.5.7-X.tar.bz2
+  /usr/src/ktnef-3.5.7-X.tar.bz2
+  /usr/src/libgpgme++-3.5.7-X.tar.bz2
+  /usr/src/libkcal-3.5.7-X.tar.bz2
+  /usr/src/libkdepim-3.5.7-X.tar.bz2
+  /usr/src/libkgantt-3.5.7-X.tar.bz2
+  /usr/src/libkholidays-3.5.7-X.tar.bz2
+  /usr/src/libkmime-3.5.7-X.tar.bz2
+  /usr/src/libkpgp-3.5.7-X.tar.bz2
+  /usr/src/libkpimexchange-3.5.7-X.tar.bz2
+  /usr/src/libkpimidentities-3.5.7-X.tar.bz2
+  /usr/src/libksieve-3.5.7-X.tar.bz2
+  /usr/src/libmimelib-3.5.7-X.tar.bz2
+  /usr/src/libqgpgme-3.5.7-X.tar.bz2
+  /usr/src/networkstatus-3.5.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygknodecommon.dll
+  /usr/bin/knode.exe
+  /usr/lib/kde3/cygknodepart.dll
+  /usr/lib/kde3/kcm_knode.dll
+  /usr/lib/kde3/kcm_knode.la
+  /usr/lib/kde3/libknodepart.la
+  /usr/lib/libknodecommon.dll.a
+  /usr/lib/libknodecommon.la
+  /usr/share/applications/kde/KNode.desktop
+  /usr/share/apps/knode/filters/1.fltr
+  /usr/share/apps/knode/filters/2.fltr
+  /usr/share/apps/knode/filters/3.fltr
+  /usr/share/apps/knode/filters/4.fltr
+  /usr/share/apps/knode/filters/5.fltr
+  /usr/share/apps/knode/filters/6.fltr
+  /usr/share/apps/knode/filters/7.fltr
+  /usr/share/apps/knode/filters/8.fltr
+  /usr/share/apps/knode/filters/filters.rc
+  /usr/share/apps/knode/headers.rc
+  /usr/share/apps/knode/icons/crystalsvg/16x16/actions/mail_get_all.png
+  /usr/share/apps/knode/icons/crystalsvg/16x16/actions/message_reply.png
+  /usr/share/apps/knode/icons/crystalsvg/22x22/actions/mail_get_all.png
+  /usr/share/apps/knode/icons/crystalsvg/22x22/actions/message_reply.png
+  /usr/share/apps/knode/icons/crystalsvg/32x32/actions/mail_get_all.png
+  /usr/share/apps/knode/icons/crystalsvg/32x32/actions/message_reply.png
+  /usr/share/apps/knode/icons/crystalsvg/scalable/actions/mail_get_all.svg
+  /usr/share/apps/knode/kncomposerui.rc
+  /usr/share/apps/knode/knodeui.rc
+  /usr/share/apps/knode/knreaderui.rc
+  /usr/share/apps/knode/pics/article.png
+  /usr/share/apps/knode/pics/ctlart.png
+  /usr/share/apps/knode/pics/eyes.png
+  /usr/share/apps/knode/pics/greyball.png
+  /usr/share/apps/knode/pics/greyballchk.png
+  /usr/share/apps/knode/pics/group.png
+  /usr/share/apps/knode/pics/group_big.png
+  /usr/share/apps/knode/pics/ignore.png
+  /usr/share/apps/knode/pics/mail.png
+  /usr/share/apps/knode/pics/newsubs.png
+  /usr/share/apps/knode/pics/pgp-keys.png
+  /usr/share/apps/knode/pics/posting.png
+  /usr/share/apps/knode/pics/snderr.png
+  /usr/share/apps/knode/pics/stat_cncl.png
+  /usr/share/apps/knode/pics/stat_edit.png
+  /usr/share/apps/knode/pics/stat_saved.png
+  /usr/share/apps/knode/pics/stat_sent.png
+  /usr/share/doc/HTML/en/knode/commands.docbook
+  /usr/share/doc/HTML/en/knode/common
+  /usr/share/doc/HTML/en/knode/credits.docbook
+  /usr/share/doc/HTML/en/knode/eyes.png
+  /usr/share/doc/HTML/en/knode/faq.docbook
+  /usr/share/doc/HTML/en/knode/gloss.docbook
+  /usr/share/doc/HTML/en/knode/greyball.png
+  /usr/share/doc/HTML/en/knode/greyballchk.png
+  /usr/share/doc/HTML/en/knode/index.cache.bz2
+  /usr/share/doc/HTML/en/knode/index.docbook
+  /usr/share/doc/HTML/en/knode/install.docbook
+  /usr/share/doc/HTML/en/knode/introduction.docbook
+  /usr/share/doc/HTML/en/knode/journey.docbook
+  /usr/share/doc/HTML/en/knode/knode-cleanup.png
+  /usr/share/doc/HTML/en/knode/knode-colors-fonts.png
+  /usr/share/doc/HTML/en/knode/knode-composer-attachments.png
+  /usr/share/doc/HTML/en/knode/knode-composer-settings.png
+  /usr/share/doc/HTML/en/knode/knode-edit-filter.png
+  /usr/share/doc/HTML/en/knode/knode-edit-header1.png
+  /usr/share/doc/HTML/en/knode/knode-edit-header2.png
+  /usr/share/doc/HTML/en/knode/knode-filters.png
+  /usr/share/doc/HTML/en/knode/knode-followup.png
+  /usr/share/doc/HTML/en/knode/knode-header-settings.png
+  /usr/share/doc/HTML/en/knode/knode-identity.png
+  /usr/share/doc/HTML/en/knode/knode-mail-account.png
+  /usr/share/doc/HTML/en/knode/knode-new-article.png
+  /usr/share/doc/HTML/en/knode/knode-news-account.png
+  /usr/share/doc/HTML/en/knode/knode-post-settings.png
+  /usr/share/doc/HTML/en/knode/knode-read-news-appearance-dialog.png
+  /usr/share/doc/HTML/en/knode/knode-read-news-settings.png
+  /usr/share/doc/HTML/en/knode/knode-reply.png
+  /usr/share/doc/HTML/en/knode/knode-rule-editor.png
+  /usr/share/doc/HTML/en/knode/knode-search.png
+  /usr/share/doc/HTML/en/knode/knode-start.png
+  /usr/share/doc/HTML/en/knode/knode-subscribe.png
+  /usr/share/doc/HTML/en/knode/knode-views.png
+  /usr/share/doc/HTML/en/knode/more.docbook
+  /usr/share/doc/HTML/en/knode/newsubs.png
+  /usr/share/doc/HTML/en/knode/redball.png
+  /usr/share/doc/HTML/en/knode/redballchk.png
+  /usr/share/doc/HTML/en/knode/using-firststart.docbook
+  /usr/share/doc/HTML/en/knode/using-morefeatures.docbook
+  /usr/share/doc/HTML/en/knode/using-subscribing.docbook
+  /usr/share/icons/hicolor/128x128/apps/knode.png
+  /usr/share/icons/hicolor/128x128/apps/knode2.png
+  /usr/share/icons/hicolor/16x16/apps/knode.png
+  /usr/share/icons/hicolor/16x16/apps/knode2.png
+  /usr/share/icons/hicolor/32x32/apps/knode.png
+  /usr/share/icons/hicolor/32x32/apps/knode2.png
+  /usr/share/icons/hicolor/48x48/apps/knode.png
+  /usr/share/icons/hicolor/48x48/apps/knode2.png
+  /usr/share/icons/hicolor/64x64/apps/knode.png
+  /usr/share/icons/hicolor/64x64/apps/knode2.png
+  /usr/share/services/knewsservice.protocol
+  /usr/share/services/knode_config_accounts.desktop
+  /usr/share/services/knode_config_appearance.desktop
+  /usr/share/services/knode_config_cleanup.desktop
+  /usr/share/services/knode_config_identity.desktop
+  /usr/share/services/knode_config_post_news.desktop
+  /usr/share/services/knode_config_privacy.desktop
+  /usr/share/services/knode_config_read_news.desktop
+
+------------------
+
+Port Notes:
+
+----- version 3.5.7-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

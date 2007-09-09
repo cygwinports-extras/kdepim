@@ -1,0 +1,12 @@
+--exclude=resource*.h
+usr/bin/cygkcal-2.dll
+usr/include/kde/libkcal/
+usr/lib/kde3/kcal_local.*
+usr/lib/kde3/kcal_localdir.*
+usr/lib/libkcal.*
+usr/share/apps/libical/
+usr/share/services/kresources/kcal/local.desktop
+usr/share/services/kresources/kcal/localdir.desktop
+usr/share/services/kresources/kcal_manager.desktop
+usr/share/doc/Cygwin/libkcal-3*.README
+usr/share/doc/libkcal-3.*/

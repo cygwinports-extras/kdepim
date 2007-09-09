@@ -1,0 +1,9 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 libkcal libkdepim libkholidays libkpimexchange libkpimidentities zlib
+external-source: kdepim
+sdesc: "KDE calendar and scheduler"
+ldesc: "KOrganizer provides management of events and tasks, alarm 
+notification, web export, network transparent handling of data, group 
+scheduling, import and export of calendar files and more. It is able to 
+work together with a wide variety of groupware servers, for example 
+Kolab, Open-Xchange, Citadel or OpenGroupware.org."

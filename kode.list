@@ -1,0 +1,6 @@
+usr/bin/cygkode-1.dll
+usr/bin/kode.exe
+usr/bin/kxml_compiler.exe
+usr/lib/libkode.*
+usr/share/doc/Cygwin/kode-3*.README
+usr/share/doc/kode-3.*/

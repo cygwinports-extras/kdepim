@@ -1,0 +1,6 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 arts libkcal libkdepim libkmime libkpimidentities
+external-source: kdepim
+sdesc: "KDE alarm and command scheduler"
+ldesc: "KDE alarm and command scheduler"
+

@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 libkdepim
+external-source: kdepim
+sdesc: "KDE RSS feed reader"
+ldesc: "KDE RSS feed reader"

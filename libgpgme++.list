@@ -1,0 +1,4 @@
+usr/bin/cyggpgme++-0.dll
+usr/include/kde/gpgme++/
+usr/lib/libgpgme++.*
+usr/share/doc/Cygwin/libgpgme++-3*.README

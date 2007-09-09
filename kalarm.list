@@ -1,0 +1,13 @@
+usr/bin/kalarm.exe
+usr/bin/kalarmd.exe
+usr/share/applications/kde/kalarm.desktop
+usr/share/applnk/.hidden/kalarmd.desktop
+usr/share/applnk/Applications/kalarm.desktop
+usr/share/apps/kalarm/
+usr/share/autostart/kalarm.tray.desktop
+usr/share/autostart/kalarmd.autostart.desktop
+usr/share/doc/HTML/en/kalarm/
+usr/share/icons/crystalsvg/*/actions/kalarm.png
+usr/share/icons/hicolor/*/apps/kalarm.png
+usr/share/doc/Cygwin/kalarm-3*.README
+usr/share/doc/kalarm-3.*/

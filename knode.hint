@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 libkdepim libkmime libkpgp
+external-source: kdepim
+sdesc: "KDE news reader"
+ldesc: "KDE news reader"

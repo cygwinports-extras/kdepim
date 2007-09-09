@@ -1,0 +1,14 @@
+usr/bin/cygkdepim-1.dll
+usr/include/kde/kdepimmacros.h
+usr/include/kde/libemailfunctions/
+usr/lib/kde3/plugins/designer/kdepimwidgets.*
+usr/lib/kde3/plugins/designer/kpartsdesignerplugin.*
+usr/lib/libkdepim.*
+usr/share/apps/kdepim/
+usr/share/apps/kdepimwidgets/
+usr/share/apps/libkdepim/
+usr/share/config.kcfg/pimemoticons.kcfg
+usr/share/icons/crystalsvg/22x22/actions/button_fewer.png
+usr/share/icons/crystalsvg/22x22/actions/button_more.png
+usr/share/doc/Cygwin/libkdepim-3*.README
+usr/share/doc/libkdepim-3.*/

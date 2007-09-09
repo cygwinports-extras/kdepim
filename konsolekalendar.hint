@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs4 qt3 libkcal libkdepim
+external-source: kdepim
+sdesc: "KDE commandline calendar"
+ldesc: "KDE commandline calendar"

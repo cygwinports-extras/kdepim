@@ -1,0 +1,5 @@
+usr/lib/kde3/kfile_ics.*
+usr/lib/kde3/kfile_vcf.*
+usr/share/services/kfile_ics.desktop
+usr/share/services/kfile_vcf.desktop
+usr/share/doc/Cygwin/kdepim-kfile-plugins-3*.README

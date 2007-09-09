@@ -1,0 +1,4 @@
+usr/bin/cygkmime-2.dll
+usr/lib/libkmime.*
+usr/share/doc/Cygwin/libkmime-3*.README
+usr/share/doc/libkmime-3.*/
