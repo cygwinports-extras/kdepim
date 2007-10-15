@@ -1,4 +1,4 @@
-category: KDE Mail News
+category: KDE Mail
 requires: cygwin kdelibs4 qt3
 external-source: kdepim
 sdesc: "KDE message filtering library"
