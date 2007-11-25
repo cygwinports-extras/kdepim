@@ -1,4 +1,5 @@
 --exclude=local*.desktop
+usr/bin/cyggwsoap-0.dll
 usr/bin/cygkabckolab-0.dll
 usr/bin/cygkabc_groupdav-1.dll
 usr/bin/cygkabc_groupwise-1.dll
@@ -40,6 +41,7 @@ usr/lib/kde3/kio_groupwise.*
 usr/lib/kde3/knotes_kolab.*
 usr/lib/kde3/knotes_xmlrpc.*
 usr/lib/kde3/resourcecalendarexchange.*
+usr/lib/libgwsoap.*
 usr/lib/libkabckolab.*
 usr/lib/libkabc_groupdav.*
 usr/lib/libkabc_groupwise.*

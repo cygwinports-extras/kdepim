@@ -31,6 +31,7 @@ usr/share/apps/kconf_update/kmail-3.3-use-ID-for-accounts.pl
 usr/share/apps/kconf_update/kmail-3.3b1-misc.pl
 usr/share/apps/kconf_update/kmail-3.4-misc.pl
 usr/share/apps/kconf_update/kmail-3.4.1-update-status-filters.pl
+usr/share/apps/kconf_update/kmail-3.5-trigger-flag-migration.pl
 usr/share/apps/kconf_update/kmail-pgpidentity.pl
 usr/share/apps/kconf_update/kmail-upd-identities.pl
 usr/share/apps/kconf_update/kmail.upd
