@@ -1,5 +1,5 @@
 --exclude=key*.png
-usr/bin/cygknodecommon.dll
+usr/bin/cygknodecommon*.dll
 usr/bin/knode.exe
 usr/lib/kde3/*knodepart.*
 usr/lib/kde3/kcm_knode.*

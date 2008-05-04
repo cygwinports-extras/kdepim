@@ -12,6 +12,7 @@ usr/lib/kde3/kcm_sdsummary.*
 usr/lib/libkontact.*
 usr/lib/libkpinterfaces.*
 usr/share/applications/kde/Kontact.desktop
+usr/share/applications/kde/kontactdcop.desktop
 usr/share/apps/knotes/knotes_part.rc
 usr/share/apps/kontact/
 usr/share/apps/kontactsummary/

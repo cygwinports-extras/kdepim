@@ -3,26 +3,25 @@ knotes
 KDE sticky notes application
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  kdelibs4-3.5.8-1
+  cygwin-1.5.25-11
+  kdelibs4-3.5.9-1
   libX11_6-1.1.3-1
-  libkcal-3.5.8-1
-  libkdepim-3.5.8-1
+  libkcal-3.5.9-1
+  libkdepim-3.5.9-1
   qt3-3.3.8-4
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  cygport-0.3.9-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
-  perl-5.8.7-5
+  perl-5.10.0-3
   pkg-config-0.21-1
   sed-4.1.5-2
 
@@ -30,54 +29,54 @@ Canonical website:
   http://pim.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/3.5.8/src/
+  ftp://ftp.kde.org/pub/kde/stable/3.5.9/src/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdepim-3.5.8-X-src.tar.bz2
+  unpack kdepim-3.5.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdepim-3.5.8-X.cygport all
+  cygport ./kdepim-3.5.9-X.cygport all
 
 This will create:
-  /usr/src/kdepim-3.5.8-X-src.tar.bz2
-  /usr/src/kdepim-3.5.8-X.tar.bz2
+  /usr/src/kdepim-3.5.9-X-src.tar.bz2
+  /usr/src/kdepim-3.5.9-X.tar.bz2
 
-  /usr/src/akregator-3.5.8-X.tar.bz2
-  /usr/src/kaddressbook-3.5.8-X.tar.bz2
-  /usr/src/kalarm-3.5.8-X.tar.bz2
-  /usr/src/kandy-3.5.8-X.tar.bz2
-  /usr/src/karm-3.5.8-X.tar.bz2
-  /usr/src/kdepim-kfile-plugins-3.5.8-X.tar.bz2
-  /usr/src/kdepim-kioslaves-3.5.8-X.tar.bz2
-  /usr/src/kdepim-kresources-3.5.8-X.tar.bz2
-  /usr/src/kdepim-wizards-3.5.8-X.tar.bz2
-  /usr/src/kitchensync-3.5.8-X.tar.bz2
-  /usr/src/kleopatra-3.5.8-X.tar.bz2
-  /usr/src/kmail-3.5.8-X.tar.bz2
-  /usr/src/knode-3.5.8-X.tar.bz2
-  /usr/src/knotes-3.5.8-X.tar.bz2
-  /usr/src/kode-3.5.8-X.tar.bz2
-  /usr/src/konsolekalendar-3.5.8-X.tar.bz2
-  /usr/src/kontact-3.5.8-X.tar.bz2
-  /usr/src/korganizer-3.5.8-X.tar.bz2
-  /usr/src/korn-3.5.8-X.tar.bz2
-  /usr/src/ktnef-3.5.8-X.tar.bz2
-  /usr/src/libgpgme++-3.5.8-X.tar.bz2
-  /usr/src/libkcal-3.5.8-X.tar.bz2
-  /usr/src/libkdepim-3.5.8-X.tar.bz2
-  /usr/src/libkgantt-3.5.8-X.tar.bz2
-  /usr/src/libkholidays-3.5.8-X.tar.bz2
-  /usr/src/libkmime-3.5.8-X.tar.bz2
-  /usr/src/libkpgp-3.5.8-X.tar.bz2
-  /usr/src/libkpimexchange-3.5.8-X.tar.bz2
-  /usr/src/libkpimidentities-3.5.8-X.tar.bz2
-  /usr/src/libksieve-3.5.8-X.tar.bz2
-  /usr/src/libmimelib-3.5.8-X.tar.bz2
-  /usr/src/libqgpgme-3.5.8-X.tar.bz2
-  /usr/src/networkstatus-3.5.8-X.tar.bz2
+  /usr/src/akregator-3.5.9-X.tar.bz2
+  /usr/src/kaddressbook-3.5.9-X.tar.bz2
+  /usr/src/kalarm-3.5.9-X.tar.bz2
+  /usr/src/kandy-3.5.9-X.tar.bz2
+  /usr/src/karm-3.5.9-X.tar.bz2
+  /usr/src/kdepim-kfile-plugins-3.5.9-X.tar.bz2
+  /usr/src/kdepim-kioslaves-3.5.9-X.tar.bz2
+  /usr/src/kdepim-kresources-3.5.9-X.tar.bz2
+  /usr/src/kdepim-wizards-3.5.9-X.tar.bz2
+  /usr/src/kitchensync-3.5.9-X.tar.bz2
+  /usr/src/kleopatra-3.5.9-X.tar.bz2
+  /usr/src/kmail-3.5.9-X.tar.bz2
+  /usr/src/knode-3.5.9-X.tar.bz2
+  /usr/src/knotes-3.5.9-X.tar.bz2
+  /usr/src/kode-3.5.9-X.tar.bz2
+  /usr/src/konsolekalendar-3.5.9-X.tar.bz2
+  /usr/src/kontact-3.5.9-X.tar.bz2
+  /usr/src/korganizer-3.5.9-X.tar.bz2
+  /usr/src/korn-3.5.9-X.tar.bz2
+  /usr/src/ktnef-3.5.9-X.tar.bz2
+  /usr/src/libgpgme++-3.5.9-X.tar.bz2
+  /usr/src/libkcal-3.5.9-X.tar.bz2
+  /usr/src/libkdepim-3.5.9-X.tar.bz2
+  /usr/src/libkgantt-3.5.9-X.tar.bz2
+  /usr/src/libkholidays-3.5.9-X.tar.bz2
+  /usr/src/libkmime-3.5.9-X.tar.bz2
+  /usr/src/libkpgp-3.5.9-X.tar.bz2
+  /usr/src/libkpimexchange-3.5.9-X.tar.bz2
+  /usr/src/libkpimidentities-3.5.9-X.tar.bz2
+  /usr/src/libksieve-3.5.9-X.tar.bz2
+  /usr/src/libmimelib-3.5.9-X.tar.bz2
+  /usr/src/libqgpgme-3.5.9-X.tar.bz2
+  /usr/src/networkstatus-3.5.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -117,6 +116,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 3.5.9-1 -----
+Version bump.
 
 ----- version 3.5.8-1 -----
 Version bump.

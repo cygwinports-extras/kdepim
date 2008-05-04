@@ -1,0 +1,21 @@
+inherit kde3
+
+# kpilot requires pilot-link
+DO_NOT_COMPILE='indexlib kpilot'
+
+PKG_NAMES="${PN} ${PN}-doc
+           ${PN}-kfile-plugins ${PN}-kioslaves ${PN}-kresources ${PN}-wizards
+           akregator kaddressbook kalarm kandy karm kitchensync kleopatra
+           kmail knode knotes kode konsolekalendar kontact korganizer korn
+           ktnef libgpgme++ libkcal libkdepim libkgantt libkholidays libkmime
+           libkpgp libkpimexchange libkpimidentities libksieve libmimelib
+           libqgpgme networkstatus"
+PKG_CONTENTS[0]="etc/postinstall/ usr/share/doc/Cygwin/${P}.README usr/share/doc/${P}/"
+PKG_CONTENTS[1]="usr/share/doc/HTML/en/${PN}-apidocs/"
+PKG_IGNORE="usr/share/doc/HTML/en/kpilot/"
+
+CYGCONF_ARGS="
+	--with-gpgme-prefix=/usr
+	--with-opensync=/usr
+	--with-sasl
+"
