@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 libgpgme++ libkcal libkdepim kleopatra libqgpgme
+requires: cygwin kdelibs4 libqt3 libgpgme++0 libkcal2 libkdepim1 libkleopatra1 libqgpgme0
 external-source: kdepim
 sdesc: "KDE address book"
 ldesc: "KDE address book"

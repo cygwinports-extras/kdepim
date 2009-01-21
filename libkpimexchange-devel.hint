@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs-devel libqt3-devel libkcal-devel libkpimexchange1
+external-source: kdepim
+sdesc: "KDE PIM Exchange library (development)"
+ldesc: "KDE PIM Exchange library"

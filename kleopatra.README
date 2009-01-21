@@ -3,7 +3,7 @@ kleopatra
 KDE certificate manager
 
 Runtime requirements:
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
   kdelibs4-3.5.9-1
   libgpgme++-3.5.9-1
   libgpgme11-1.1.5-1
@@ -12,79 +12,124 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20060817-1
-  cygport-0.3.9-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.4-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool-2.2.2-2
+  libtool-2.2.6a-1
   make-3.81-1
-  perl-5.10.0-3
-  pkg-config-0.21-1
+  perl-5.10.0-5
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
   http://pim.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/3.5.9/src/
+  ftp://ftp.kde.org/pub/kde/stable/3.5.10/src/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdepim-3.5.9-X-src.tar.bz2
+  unpack kdepim-3.5.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdepim-3.5.9-X.cygport all
+  cygport ./kdepim-3.5.10-X.cygport all
 
 This will create:
-  /usr/src/kdepim-3.5.9-X-src.tar.bz2
-  /usr/src/kdepim-3.5.9-X.tar.bz2
+  /usr/src/kdepim-3.5.10-X-src.tar.bz2
+  /usr/src/kdepim-3.5.10-X.tar.bz2
 
-  /usr/src/akregator-3.5.9-X.tar.bz2
-  /usr/src/kaddressbook-3.5.9-X.tar.bz2
-  /usr/src/kalarm-3.5.9-X.tar.bz2
-  /usr/src/kandy-3.5.9-X.tar.bz2
-  /usr/src/karm-3.5.9-X.tar.bz2
-  /usr/src/kdepim-kfile-plugins-3.5.9-X.tar.bz2
-  /usr/src/kdepim-kioslaves-3.5.9-X.tar.bz2
-  /usr/src/kdepim-kresources-3.5.9-X.tar.bz2
-  /usr/src/kdepim-wizards-3.5.9-X.tar.bz2
-  /usr/src/kitchensync-3.5.9-X.tar.bz2
-  /usr/src/kleopatra-3.5.9-X.tar.bz2
-  /usr/src/kmail-3.5.9-X.tar.bz2
-  /usr/src/knode-3.5.9-X.tar.bz2
-  /usr/src/knotes-3.5.9-X.tar.bz2
-  /usr/src/kode-3.5.9-X.tar.bz2
-  /usr/src/konsolekalendar-3.5.9-X.tar.bz2
-  /usr/src/kontact-3.5.9-X.tar.bz2
-  /usr/src/korganizer-3.5.9-X.tar.bz2
-  /usr/src/korn-3.5.9-X.tar.bz2
-  /usr/src/ktnef-3.5.9-X.tar.bz2
-  /usr/src/libgpgme++-3.5.9-X.tar.bz2
-  /usr/src/libkcal-3.5.9-X.tar.bz2
-  /usr/src/libkdepim-3.5.9-X.tar.bz2
-  /usr/src/libkgantt-3.5.9-X.tar.bz2
-  /usr/src/libkholidays-3.5.9-X.tar.bz2
-  /usr/src/libkmime-3.5.9-X.tar.bz2
-  /usr/src/libkpgp-3.5.9-X.tar.bz2
-  /usr/src/libkpimexchange-3.5.9-X.tar.bz2
-  /usr/src/libkpimidentities-3.5.9-X.tar.bz2
-  /usr/src/libksieve-3.5.9-X.tar.bz2
-  /usr/src/libmimelib-3.5.9-X.tar.bz2
-  /usr/src/libqgpgme-3.5.9-X.tar.bz2
-  /usr/src/networkstatus-3.5.9-X.tar.bz2
+  /usr/src/akregator-3.5.10-X.tar.bz2
+  /usr/src/kaddressbook-3.5.10-X.tar.bz2
+  /usr/src/kalarm-3.5.10-X.tar.bz2
+  /usr/src/kandy-3.5.10-X.tar.bz2
+  /usr/src/karm-3.5.10-X.tar.bz2
+  /usr/src/kde3-kfile-plugins-kdepim-3.5.10-X.tar.bz2
+  /usr/src/kde3-kioslaves-kdepim-3.5.10-X.tar.bz2
+  /usr/src/kdepim-kresources-3.5.10-X.tar.bz2
+  /usr/src/kdepim-wizards-3.5.10-X.tar.bz2
+  /usr/src/kitchensync-3.5.10-X.tar.bz2
+  /usr/src/kleopatra-3.5.10-X.tar.bz2
+  /usr/src/kmail-3.5.10-X.tar.bz2
+  /usr/src/knode-3.5.10-X.tar.bz2
+  /usr/src/knotes-3.5.10-X.tar.bz2
+  /usr/src/kode-3.5.10-X.tar.bz2
+  /usr/src/konsolekalendar-3.5.10-X.tar.bz2
+  /usr/src/kontact-3.5.10-X.tar.bz2
+  /usr/src/korganizer-3.5.10-X.tar.bz2
+  /usr/src/korn-3.5.10-X.tar.bz2
+  /usr/src/ktnef-3.5.10-X.tar.bz2
+  /usr/src/libgpgme++-devel-3.5.10-X.tar.bz2
+  /usr/src/libgpgme++0-3.5.10-X.tar.bz2
+  /usr/src/libkcal-devel-3.5.10-X.tar.bz2
+  /usr/src/libkcal2-3.5.10-X.tar.bz2
+  /usr/src/libkdepim-devel-3.5.10-X.tar.bz2
+  /usr/src/libkdepim1-3.5.10-X.tar.bz2
+  /usr/src/libkgantt-devel-3.5.10-X.tar.bz2
+  /usr/src/libkgantt0-3.5.10-X.tar.bz2
+  /usr/src/libkholidays1-3.5.10-X.tar.bz2
+  /usr/src/libkleopatra-devel-3.5.10-X.tar.bz2
+  /usr/src/libkleopatra1-3.5.10-X.tar.bz2
+  /usr/src/libkmime2-3.5.10-X.tar.bz2
+  /usr/src/libkpgp2-3.5.10-X.tar.bz2
+  /usr/src/libkpimexchange-devel-3.5.10-X.tar.bz2
+  /usr/src/libkpimexchange1-3.5.10-X.tar.bz2
+  /usr/src/libkpimidentities1-3.5.10-X.tar.bz2
+  /usr/src/libksieve-devel-3.5.10-X.tar.bz2
+  /usr/src/libksieve0-3.5.10-X.tar.bz2
+  /usr/src/libktnef-devel-3.5.10-X.tar.bz2
+  /usr/src/libktnef1-3.5.10-X.tar.bz2
+  /usr/src/libmimelib-devel-3.5.10-X.tar.bz2
+  /usr/src/libmimelib1-3.5.10-X.tar.bz2
+  /usr/src/libqgpgme-devel-3.5.10-X.tar.bz2
+  /usr/src/libqgpgme0-3.5.10-X.tar.bz2
+  /usr/src/networkstatus-3.5.10-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/bin/cygkleopatra-1.dll
+(kleopatra)
   /usr/bin/kleopatra.exe
   /usr/bin/kwatchgnupg.exe
+  /usr/lib/kde3/kcm_kleopatra.dll
+  /usr/lib/kde3/kcm_kleopatra.la
+  /usr/share/applications/kde/kleopatra_import.desktop
+  /usr/share/apps/kleopatra/kleopatraui.rc
+  /usr/share/apps/kwatchgnupg/kwatchgnupgui.rc
+  /usr/share/apps/kwatchgnupg/pics/kwatchgnupg.png
+  /usr/share/apps/kwatchgnupg/pics/kwatchgnupg2.png
+  /usr/share/doc/HTML/en/kleopatra/common
+  /usr/share/doc/HTML/en/kleopatra/index.cache.bz2
+  /usr/share/doc/HTML/en/kleopatra/index.docbook
+  /usr/share/doc/HTML/en/kwatchgnupg/common
+  /usr/share/doc/HTML/en/kwatchgnupg/index.cache.bz2
+  /usr/share/doc/HTML/en/kwatchgnupg/index.docbook
+  /usr/share/icons/crystalsvg/16x16/apps/gpg.png
+  /usr/share/icons/crystalsvg/16x16/apps/gpgsm.png
+  /usr/share/icons/crystalsvg/22x22/apps/gpg.png
+  /usr/share/icons/crystalsvg/22x22/apps/gpgsm.png
+  /usr/share/icons/crystalsvg/32x32/apps/gpg.png
+  /usr/share/icons/crystalsvg/32x32/apps/gpgsm.png
+  /usr/share/services/kleopatra_config_appear.desktop
+  /usr/share/services/kleopatra_config_dirserv.desktop
+  /usr/share/services/kleopatra_config_dnorder.desktop
+
+(libkleopatra1)
+  /usr/bin/cygkleopatra-1.dll
+  /usr/share/apps/libkleopatra/pics/chiasmus_chi.png
+  /usr/share/apps/libkleopatra/pics/key.png
+  /usr/share/apps/libkleopatra/pics/key_bad.png
+  /usr/share/apps/libkleopatra/pics/key_ok.png
+  /usr/share/apps/libkleopatra/pics/key_unknown.png
+  /usr/share/config/libkleopatrarc
+
+(libkleopatra-devel)
   /usr/include/kde/kleo/backendconfigwidget.h
   /usr/include/kde/kleo/cryptobackend.h
   /usr/include/kde/kleo/cryptobackendfactory.h
@@ -119,40 +164,15 @@ Files included in the binary package:
   /usr/include/kde/kleo/signjob.h
   /usr/include/kde/kleo/verifydetachedjob.h
   /usr/include/kde/kleo/verifyopaquejob.h
-  /usr/lib/kde3/kcm_kleopatra.dll
-  /usr/lib/kde3/kcm_kleopatra.la
   /usr/lib/libkleopatra.dll.a
   /usr/lib/libkleopatra.la
-  /usr/share/applications/kde/kleopatra_import.desktop
-  /usr/share/apps/kleopatra/kleopatraui.rc
-  /usr/share/apps/kwatchgnupg/kwatchgnupgui.rc
-  /usr/share/apps/kwatchgnupg/pics/kwatchgnupg.png
-  /usr/share/apps/kwatchgnupg/pics/kwatchgnupg2.png
-  /usr/share/apps/libkleopatra/pics/chiasmus_chi.png
-  /usr/share/apps/libkleopatra/pics/key.png
-  /usr/share/apps/libkleopatra/pics/key_bad.png
-  /usr/share/apps/libkleopatra/pics/key_ok.png
-  /usr/share/apps/libkleopatra/pics/key_unknown.png
-  /usr/share/config/libkleopatrarc
-  /usr/share/doc/HTML/en/kleopatra/common
-  /usr/share/doc/HTML/en/kleopatra/index.cache.bz2
-  /usr/share/doc/HTML/en/kleopatra/index.docbook
-  /usr/share/doc/HTML/en/kwatchgnupg/common
-  /usr/share/doc/HTML/en/kwatchgnupg/index.cache.bz2
-  /usr/share/doc/HTML/en/kwatchgnupg/index.docbook
-  /usr/share/icons/crystalsvg/16x16/apps/gpg.png
-  /usr/share/icons/crystalsvg/16x16/apps/gpgsm.png
-  /usr/share/icons/crystalsvg/22x22/apps/gpg.png
-  /usr/share/icons/crystalsvg/22x22/apps/gpgsm.png
-  /usr/share/icons/crystalsvg/32x32/apps/gpg.png
-  /usr/share/icons/crystalsvg/32x32/apps/gpgsm.png
-  /usr/share/services/kleopatra_config_appear.desktop
-  /usr/share/services/kleopatra_config_dirserv.desktop
-  /usr/share/services/kleopatra_config_dnorder.desktop
 
 ------------------
 
 Port Notes:
+
+----- version 3.5.10-1 -----
+Version bump.
 
 ----- version 3.5.9-1 -----
 Version bump.

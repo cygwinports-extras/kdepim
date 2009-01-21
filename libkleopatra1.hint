@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs4 libqt3 libgpgme11 libgpgme++0 libqgpgme0
+external-source: kdepim
+sdesc: "KDE certificate manager library (runtime)"
+ldesc: "KDE certificate manager"

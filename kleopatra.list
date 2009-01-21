@@ -1,14 +1,9 @@
-usr/bin/cygkleopatra-1.dll
 usr/bin/kleopatra.exe
 usr/bin/kwatchgnupg.exe
-usr/include/kde/kleo/
 usr/lib/kde3/kcm_kleopatra.*
-usr/lib/libkleopatra.*
 usr/share/applications/kde/kleopatra_import.desktop
 usr/share/apps/kleopatra/
 usr/share/apps/kwatchgnupg/
-usr/share/apps/libkleopatra/
-usr/share/config/libkleopatrarc
 usr/share/doc/HTML/en/kleopatra/
 usr/share/doc/HTML/en/kwatchgnupg/
 usr/share/icons/crystalsvg/*/apps/gpg.png

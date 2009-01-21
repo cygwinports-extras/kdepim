@@ -1,5 +1,0 @@
-category: KDE
-requires: cygwin libgpg-error0 libgpgme11
-external-source: kdepim
-sdesc: "GPGME C++ library"
-ldesc: "GPGME C++ library"

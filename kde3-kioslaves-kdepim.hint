@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs4 libqt3 libsasl2 libkmime2
+external-source: kdepim
+sdesc: "KDE PIM file I/O plugins"
+ldesc: "KDE PIM file I/O plugins"

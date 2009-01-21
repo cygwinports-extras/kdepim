@@ -1,0 +1,58 @@
+inherit kde3
+
+PATCH_URI="3.5.9-no-undefined.patch"
+
+# kpilot requires pilot-link
+DO_NOT_COMPILE='indexlib kpilot'
+
+PKG_NAMES="${PN} ${PN}-kresources ${PN}-wizards
+           akregator kaddressbook kalarm kandy karm kitchensync kleopatra
+           kmail knode knotes kode konsolekalendar kontact korganizer korn
+           ktnef networkstatus
+           kde3-kfile-plugins-kdepim kde3-kioslaves-kdepim
+		   libgpgme++0 libgpgme++-devel libkcal2 libkcal-devel
+		   libkgantt0 libkgantt-devel libkholidays1
+		   libkleopatra1 libkleopatra-devel libkmime2
+           libkdepim1 libkdepim-devel libkpgp2 libkpimexchange1
+           libkpimexchange-devel libkpimidentities1
+		   libksieve0 libksieve-devel libktnef1 libktnef-devel
+		   libmimelib1 libmimelib-devel libqgpgme0 libqgpgme-devel"
+kdepim_CONTENTS="etc/postinstall/ usr/share/doc/Cygwin/${P}.README usr/share/doc/${P}/"
+kde3_kfile_plugins_kdepim_CONTENTS="usr/lib/kde3/kfile_* usr/share/services/kfile_*.desktop"
+libgpgme__0_CONTENTS="usr/bin/cyggpgme++-0.dll"
+libgpgme___devel_CONTENTS="usr/include/kde/gpgme++/ usr/lib/libgpgme++.*"
+libkcal_devel_CONTENTS="usr/include/kde/libkcal/ usr/lib/libkcal.*"
+libkdepim_devel_CONTENTS="usr/include/kde/kdepimmacros.h
+                          usr/include/kde/libemailfunctions/
+                          usr/lib/libkdepim.*"
+libkgantt0_CONTENTS="usr/bin/cygkgantt-0.dll usr/share/apps/kgantt/"
+libkgantt_devel_CONTENTS="usr/include/kde/kgantt/ usr/lib/libkgantt.*"
+libkholidays1_CONTENTS="usr/bin/cygkholidays-1.dll usr/share/apps/libkholidays/"
+libkleopatra1_CONTENTS="usr/bin/cygkleopatra-1.dll usr/share/apps/libkleopatra/
+                        usr/share/config/libkleopatrarc"
+libkleopatra_devel_CONTENTS="usr/include/kde/kleo/ usr/lib/libkleopatra.*"
+libkmime2_CONTENTS="usr/bin/cygkmime-2.dll"
+libkpimexchange1_CONTENTS="usr/bin/cygkpimexchange-1.dll"
+libkpimexchange_devel_CONTENTS="usr/include/kde/kdepim/exchange* usr/lib/libkpimexchange.*"
+libkpimidentities1_CONTENTS="usr/bin/cygkpimidentities-1.dll"
+libksieve0_CONTENTS="usr/bin/cygksieve-0.dll"
+libksieve_devel_CONTENTS="usr/include/kde/ksieve/ usr/lib/libksieve.*"
+libktnef1_CONTENTS="usr/bin/cygktnef-1.dll"
+libktnef_devel_CONTENTS="usr/include/kde/ktnef/ usr/lib/libktnef.*"
+libmimelib1_CONTENTS="usr/bin/cygmimelib-1.dll"
+libmimelib_devel_CONTENTS="usr/include/kde/mimelib/ usr/lib/libmimelib.*"
+libqgpgme0_CONTENTS="usr/bin/cygqgpgme-0.dll"
+libqgpgme_devel_CONTENTS="usr/include/kde/qgpgme/ usr/lib/libqgpgme.*"
+PKG_IGNORE="
+	usr/lib/libkholidays.*
+	usr/lib/libkmime.*
+	usr/lib/libkpgp.*
+	usr/lib/libkpimidentities.*
+	usr/share/doc/HTML/en/kpilot/
+"
+
+CYGCONF_ARGS="
+	--with-gpgme-prefix=/usr
+	--with-opensync=/usr
+	--with-sasl
+"

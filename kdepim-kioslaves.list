@@ -1,8 +1,0 @@
-usr/lib/kde3/kio_imap4.*
-usr/lib/kde3/kio_mbox.*
-usr/lib/kde3/kio_sieve.*
-usr/share/services/imap4.protocol
-usr/share/services/imaps.protocol
-usr/share/services/mbox.protocol
-usr/share/services/sieve.protocol
-usr/share/doc/Cygwin/kdepim-kioslaves-3*.README

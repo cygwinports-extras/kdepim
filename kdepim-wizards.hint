@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 kdepim-kresources libkcal libkdepim libkpimidentities
+requires: cygwin kdelibs4 libqt3 kdepim-kresources libkcal2 libkdepim1 libkpimidentities1
 external-source: kdepim
 sdesc: "KDE PIM configuration wizards"
 ldesc: "KDE PIM configuration wizards"

@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs4 libqt3
+external-source: kdepim
+sdesc: "KDE gantt chart library (runtime)"
+ldesc: "KDE gantt chart library"

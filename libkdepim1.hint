@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin kdelibs4 libqt3 libkcal2
+external-source: kdepim
+sdesc: "KDE PIM core library (runtime)"
+ldesc: "KDE PIM core library"

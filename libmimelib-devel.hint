@@ -1,0 +1,5 @@
+category: KDE
+requires: cygwin libmimelib1
+external-source: kdepim
+sdesc: "KDE C MIME library (development)"
+ldesc: "KDE C MIME library"

@@ -1,5 +1,0 @@
-category: KDE
-requires: cygwin kdelibs4 qt3 libkcal
-external-source: kdepim
-sdesc: "KDE PIM file dialog plugins"
-ldesc: "KDE PIM file dialog plugins"

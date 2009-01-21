@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 libgpgme11 libgpgme++ libqgpgme
+requires: cygwin kdelibs4 libqt3 libgpgme++0 libkleopatra1
 external-source: kdepim
 sdesc: "KDE certificate manager"
 ldesc: "KDE certificate manager"

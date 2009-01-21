@@ -25,7 +25,6 @@ usr/bin/cygkslox-0.dll
 usr/bin/scalixadmin.exe
 usr/include/kde/kabc/kabc_resourcexmlrpc.h
 usr/include/kde/kabc/kcal_resourcexmlrpc.h
-usr/include/kde/libkcal/resource*.h
 usr/lib/kde3/kabc_groupdav.*
 usr/lib/kde3/kabc_groupwise.*
 usr/lib/kde3/kabc_kolab.*

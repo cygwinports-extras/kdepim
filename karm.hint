@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 qt3 libXss1 libkcal libkdepim kdepim-kresources
+requires: cygwin kdelibs4 libqt3 libXss1 libkcal2 libkdepim1 kdepim-kresources
 external-source: kdepim
 sdesc: "KDE time tracker"
 ldesc: "KDE time tracker"
