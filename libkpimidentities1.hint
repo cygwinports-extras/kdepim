@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 libqt3 libkdepim1 libkleopatra1
+requires: kdelibs4 libqt3 libkdepim1 libkleopatra1
 external-source: kdepim
 sdesc: "KDE PIM user identification library"
 ldesc: "KDE PIM user identification library"

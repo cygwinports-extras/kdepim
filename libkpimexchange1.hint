@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 libqt3 libkcal2
+requires: kdelibs4 libqt3 libkcal2
 external-source: kdepim
 sdesc: "KDE PIM Exchange library (runtime)"
 ldesc: "KDE PIM Exchange library"

@@ -1,5 +1,5 @@
 category: KDE Mail
-requires: cygwin kdelibs4 libqt3 libktnef1
+requires: kdelibs4 libqt3 libktnef1
 external-source: kdepim
 sdesc: "KDE MS-TNEF attachment reader"
 ldesc: "KDE MS-TNEF attachment reader"

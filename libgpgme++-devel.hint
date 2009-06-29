@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin libgpg-error-devel libgpgme-devel libgpgme++0
+requires: libgpg-error-devel libgpgme-devel libgpgme++0
 external-source: kdepim
 sdesc: "GPGME C++ library (development)"
 ldesc: "GPGME C++ library"

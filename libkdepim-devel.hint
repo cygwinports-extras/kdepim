@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs-devel libqt3-devel libkcal-devel
+requires: kdelibs-devel libqt3-devel libkcal-devel
 external-source: kdepim
 sdesc: "KDE PIM core library (development)"
 ldesc: "KDE PIM core library"

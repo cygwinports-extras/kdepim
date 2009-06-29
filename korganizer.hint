@@ -1,5 +1,5 @@
 category: KDE
-requires: cygwin kdelibs4 libqt3 libkcal2 libkdepim1 libkholidays1 libkpimexchange1 libkpimidentities1 zlib
+requires: kdelibs4 libqt3 libkcal2 libkdepim1 libkholidays1 libkpimexchange1 libkpimidentities1 zlib
 external-source: kdepim
 sdesc: "KDE calendar and scheduler"
 ldesc: "KOrganizer provides management of events and tasks, alarm 
