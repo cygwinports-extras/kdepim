@@ -1,0 +1,15 @@
+inherit kde4
+
+PATCH_URI="4.3.4-kabcclient-install.patch"
+
+DO_NOT_COMPILE="kpilot"
+
+PKG_NAMES="${PN} ${PN}-groupware akregator kaddressbook kalarm kjots kleopatra
+           kmail knode knotes konsolekalendar kontact korganizer ktimetracker
+           libkdepim4 libkleo4 libkleo4-devel libkpgp4 libkpgp4-devel
+           strigi-analyzer-kdepim"
+
+kdepim_CONTENTS="etc/ usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
+ksendemail_CONTENTS="usr/bin/ksendemail.exe"
+libkleo4_devel_CONTENTS="usr/include/kde4/kleo/ usr/lib/kde4/lib/libkleo.*"
+libkpgp4_devel_CONTENTS="usr/include/kde4/kpgp/ usr/lib/kde4/lib/libkpgp.*"

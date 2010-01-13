@@ -1,0 +1,5 @@
+category: KDE
+requires: kdepim-groupware libgcc1 libkdecore5 libkdepim4 libkpim4 libQtCore4 libQtDBus4 libQtGui4 libQtXml4 libstdc++6 libX11_6 libXss1
+external-source: kdepim
+sdesc: "KDE time tracker"
+ldesc: "KDE time tracker"

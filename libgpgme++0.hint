@@ -1,5 +1,0 @@
-category: KDE
-requires: libgpg-error0 libgpgme11
-external-source: kdepim
-sdesc: "GPGME C++ library (runtime)"
-ldesc: "GPGME C++ library"

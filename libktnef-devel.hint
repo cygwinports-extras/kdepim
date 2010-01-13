@@ -1,5 +1,0 @@
-category: KDE Mail
-requires: kdelibs-devel libqt3-devel libktnef1
-external-source: kdepim
-sdesc: "KDE MS-TNEF attachment library (development)"
-ldesc: "KDE MS-TNEF attachment reader"

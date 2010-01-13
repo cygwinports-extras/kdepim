@@ -1,0 +1,5 @@
+category: KDE
+requires: libkpgp4 libboost-devel libgpgme-devel libkdecore5-devel libQt3Support4-devel libQtCore4-devel libQtGui4-devel
+external-source: kdepim
+sdesc: "KDE GPG library (development)"
+ldesc: "KDE PIM suite"

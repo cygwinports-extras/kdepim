@@ -1,0 +1,10 @@
+usr/bin/kjots.exe
+usr/lib/kde4/kcm_kjots.dll
+usr/lib/kde4/kjotspart.dll
+usr/share/applications/kde4/Kjots.desktop
+usr/share/doc/HTML/en/kjots/
+usr/share/icons/hicolor/*/apps/kjots.*
+usr/share/icons/oxygen/*/actions/edit-delete-page.*
+usr/share/kde4/apps/kjots/
+usr/share/kde4/config.kcfg/kjots.kcfg
+usr/share/kde4/services/kjots*.desktop

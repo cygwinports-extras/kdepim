@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3 libkdepim1
-external-source: kdepim
-sdesc: "KDE mobile phone utility"
-ldesc: "KDE mobile phone utility"

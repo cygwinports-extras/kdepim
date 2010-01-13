@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs-devel libqt3-devel libkgantt0
-external-source: kdepim
-sdesc: "KDE gantt chart library (development)"
-ldesc: "KDE gantt chart library"

@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3 kdepim-kresources libkcal2 libkdepim1 libkpimidentities1
-external-source: kdepim
-sdesc: "KDE PIM configuration wizards"
-ldesc: "KDE PIM configuration wizards"

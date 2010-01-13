@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libkdepim1 libkcal2 libopensync libqt3
-external-source: kdepim
-sdesc: "KDE OpenSync frontend"
-ldesc: "KDE OpenSync frontend"

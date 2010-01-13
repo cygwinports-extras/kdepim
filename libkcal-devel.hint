@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs-devel libqt3-devel libktnef-devel libkcal2
-external-source: kdepim
-sdesc: "KDE calendar library (development)"
-ldesc: "KDE calendar library"

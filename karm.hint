@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3 libXss1 libkcal2 libkdepim1 kdepim-kresources
-external-source: kdepim
-sdesc: "KDE time tracker"
-ldesc: "KDE time tracker"

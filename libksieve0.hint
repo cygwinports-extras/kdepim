@@ -1,5 +1,0 @@
-category: KDE Mail
-requires: kdelibs4 libqt3
-external-source: kdepim
-sdesc: "KDE message filtering library (runtime)"
-ldesc: "KDE message filtering library"

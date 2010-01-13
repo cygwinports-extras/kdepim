@@ -1,21 +1,16 @@
 category: KDE
-requires: akregator kaddressbook kalarm kandy karm kde3-kfile-plugins-kdepim kde3-kioslaves-kdepim kdepim-kresources kdepim-wizards kitchensync kleopatra kmail knode knotes kode konsolekalendar kontact korganizer korn ktnef networkstatus
+requires: akregator kaddressbook kalarm kdepim-groupware kdepim-runtime kjots kleopatra kmail knode knotes konsolekalendar kontact korganizer ktimetracker strigi-analyzer-kdepim
 sdesc: "KDE PIM suite (meta-package)"
 ldesc: "KDE PIM suite:
 * akregator: RSS feed reader
 * kaddressbook: address book
 * kalarm: reminder message tool
-* kandy: mobile phone utility
-* karm: time tracker
-* kitchensync: OpenSync frontend
+* kjots: outline note taker
 * kleopatra: certificate manager
 * kmail: mail client
 * knode: news reader
 * knotes: sticky notes
-* kode: C++ template generator
 * konsolekalendar: calendar CLI
 * kontact: integrated PIM application
 * korganizer: calendar and scheduling application
-* korn: mail checker
-* ktnef: MS-TNEF attachment reader
-* networkstatus: network status applet"
+* ktimetracker: time tracker"

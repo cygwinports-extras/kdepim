@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3
-external-source: kdepim
-sdesc: "KDE PGP key library"
-ldesc: "KDE PGP key library"

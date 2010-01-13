@@ -1,5 +1,0 @@
-category: KDE
-requires: libqt3-devel libgpgme++-devel libqgpgme0
-external-source: kdepim
-sdesc: "GPGME Qt3 library (development)"
-ldesc: "GPGME Qt3 library"

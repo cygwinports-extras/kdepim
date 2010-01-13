@@ -1,5 +1,0 @@
-category: KDE Mail
-requires: kdelibs-devel libqt3-devel libksieve0
-external-source: kdepim
-sdesc: "KDE message filtering library (development)"
-ldesc: "KDE message filtering library"

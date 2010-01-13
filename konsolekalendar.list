@@ -1,6 +1,3 @@
 usr/bin/konsolekalendar.exe
-usr/share/applications/kde/konsolekalendar.desktop
-usr/share/doc/HTML/en/konsolekalendar/
-usr/share/icons/crystalsvg/*/apps/konsolekalendar.png
-usr/share/doc/Cygwin/konsolekalendar-3*.README
-usr/share/doc/konsolekalendar-3.*/
+usr/share/applications/kde4/konsolekalendar.desktop
+usr/share/kde4/apps/konsolekalendar/

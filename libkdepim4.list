@@ -1,0 +1,10 @@
+usr/bin/cygkdepim-4.dll
+usr/lib/kde4/kpartsdesignerplugin.dll
+usr/lib/kde4/plugins/designer/kdepimwidgets.dll
+usr/share/dbus-1/interfaces/org.kde.addressbook.service.xml
+usr/share/dbus-1/interfaces/org.kde.mailtransport.service.xml
+usr/share/icons/oxygen/22x22/actions/button_fewer.png
+usr/share/icons/oxygen/22x22/actions/button_more.png
+usr/share/icons/oxygen/*/mimetypes/x-mail-distribution-list.*
+usr/share/kde4/apps/kdepimwidgets/
+usr/share/kde4/apps/libkdepim/

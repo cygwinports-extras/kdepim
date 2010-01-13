@@ -1,5 +1,5 @@
 category: KDE Mail News
-requires: kdelibs4 libqt3 libkcal2 libkdepim1 libkholidays1 libkpimidentities1 kaddressbook kitchensync kmail knode knotes korganizer
+requires: akregator kaddressbook kjots kmail knode knotes korganizer ktimetracker libgcc1 libkdecore5 libkdepim4 libkpim4 libQt3Support4 libQtCore4 libQtDBus4 libQtGui4 libstdc++6
 external-source: kdepim
 sdesc: "KDE PIM application"
 ldesc: "KDE PIM application"

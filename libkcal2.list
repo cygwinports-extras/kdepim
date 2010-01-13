@@ -1,7 +1,0 @@
-usr/bin/cygkcal-2.dll
-usr/lib/kde3/kcal_local.*
-usr/lib/kde3/kcal_localdir.*
-usr/share/apps/libical/
-usr/share/services/kresources/kcal/local.desktop
-usr/share/services/kresources/kcal/localdir.desktop
-usr/share/services/kresources/kcal_manager.desktop

@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs4 libqt3 libktnef1
-external-source: kdepim
-sdesc: "KDE calendar library (runtime)"
-ldesc: "KDE calendar library"

@@ -1,5 +1,5 @@
 category: KDE
-requires: kdelibs4 libqt3 libkcal2 libkdepim1 libkholidays1 libkpimexchange1 libkpimidentities1 zlib
+requires: libgcc1 libkdecore5 libkdepim4 libknotificationitem1_1 libkpim4 libphonon4 libQt3Support4 libQtCore4 libQtDBus4 libQtGui4 libQtXml4 libstdc++6 zlib0
 external-source: kdepim
 sdesc: "KDE calendar and scheduler"
 ldesc: "KOrganizer provides management of events and tasks, alarm 

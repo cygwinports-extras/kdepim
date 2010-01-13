@@ -1,5 +1,0 @@
-category: KDE
-requires: kdelibs-devel libqt3-devel libgpgme-devel libgpgme++-devel libqgpgme-devel libkleopatra1
-external-source: kdepim
-sdesc: "KDE certificate manager library (development)"
-ldesc: "KDE certificate manager"
