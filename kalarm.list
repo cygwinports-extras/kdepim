@@ -12,3 +12,4 @@ usr/share/kde4/apps/kconf_update/kalarm*
 usr/share/kde4/config.kcfg/kalarmconfig.kcfg
 usr/share/kde4/services/kresources/alarms/
 usr/share/kde4/services/kresources/kalarm_manager.desktop
+usr/share/doc/kalarm/

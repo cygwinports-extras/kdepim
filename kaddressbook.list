@@ -27,3 +27,4 @@ usr/share/kde4/services/kaddressbookpart.desktop
 usr/share/kde4/services/ldifvcardthumbnail.desktop
 usr/share/kde4/servicetypes/dbusaddressbook.desktop
 usr/share/kde4/servicetypes/kaddressbook*
+usr/share/doc/kaddressbook/

@@ -8,3 +8,4 @@ usr/share/icons/oxygen/*/actions/edit-delete-page.*
 usr/share/kde4/apps/kjots/
 usr/share/kde4/config.kcfg/kjots.kcfg
 usr/share/kde4/services/kjots*.desktop
+usr/share/doc/kjots/
