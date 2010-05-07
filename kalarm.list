@@ -1,4 +1,4 @@
-usr/bin/cygkalarm_resources-4.dll
+usr/bin/cygkalarm_*-4.dll
 usr/bin/kalarm.exe
 usr/bin/kalarmautostart.exe
 usr/lib/kde4/kalarm_*.dll

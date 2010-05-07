@@ -5,6 +5,7 @@ usr/lib/kde4/kcm_knode.dll
 usr/lib/kde4/knodepart.dll
 usr/share/applications/kde4/KNode.desktop
 usr/share/dbus-1/interfaces/org.kde.knode.xml
+usr/share/doc/HTML/en/kioslave/news/
 usr/share/doc/HTML/en/knode/
 usr/share/icons/hicolor/*/apps/knode*.png
 usr/share/kde4/apps/knode/

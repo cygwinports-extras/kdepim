@@ -4,11 +4,9 @@ usr/bin/cygksieve-4.dll
 usr/bin/cygmimelib-4.dll
 usr/bin/kmail*
 usr/bin/ksendemail.exe
-usr/include/kde4/kmail/
 usr/lib/kde4/kcm_kmail.dll
 usr/lib/kde4/kmailpart.dll
 usr/lib/kde4/kmail_*.dll
-usr/lib/kde4/lib/libkmailprivate.dll.a
 usr/share/applications/kde4/KMail.desktop
 usr/share/applications/kde4/kmail_view.desktop
 usr/share/dbus-1/interfaces/org.kde.kmail.*
@@ -25,7 +23,6 @@ usr/share/kde4/config/kmail.antivirusrc
 usr/share/kde4/config.kcfg/custommimeheader.kcfg
 usr/share/kde4/config.kcfg/customtemplates_kfg.kcfg
 usr/share/kde4/config.kcfg/kmail.kcfg
-usr/share/kde4/config.kcfg/replyphrases.kcfg
 usr/share/kde4/config.kcfg/templatesconfiguration_kfg.kcfg
 usr/share/kde4/services/kmail_config_*
 usr/share/kde4/servicetypes/dbusimap.desktop

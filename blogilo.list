@@ -1,0 +1,15 @@
+usr/bin/blogilo.exe
+usr/bin/cygmessagecore-4.dll
+usr/bin/cygmessagelist-4.dll
+usr/bin/cygmessageviewer-0.dll
+usr/share/applications/kde4/blogilo.desktop
+usr/share/doc/HTML/en/blogilo/
+usr/share/doc/blogilo/
+usr/share/icons/hicolor/*/actions/format-text-blockquote.*
+usr/share/icons/hicolor/*/actions/format-text-code.*
+usr/share/icons/hicolor/*/actions/insert-more-mark.*
+usr/share/icons/hicolor/*/actions/remove-link.*
+usr/share/icons/hicolor/*/actions/upload-media.*
+usr/share/icons/hicolor/*/apps/blogilo.*
+usr/share/kde4/apps/blogilo/
+usr/share/kde4/config.kcfg/blogilo.kcfg

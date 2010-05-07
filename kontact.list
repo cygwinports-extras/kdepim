@@ -1,4 +1,3 @@
-usr/bin/cygkontactinterfaces-4.dll
 usr/bin/cygkontactprivate-4.dll
 usr/bin/kontact.exe
 usr/lib/kde4/kcm_apptsummary.dll
@@ -10,8 +9,10 @@ usr/lib/kde4/kcm_sdsummary.dll
 usr/lib/kde4/kcm_todosummary.dll
 usr/lib/kde4/kontact_*
 usr/share/applications/kde4/Kontact.desktop
+usr/share/applications/kde4/kontact-admin.desktop
 usr/share/dbus-1/interfaces/org.kde.kontact.KNotes.xml
 usr/share/doc/HTML/en/kontact/
+usr/share/doc/HTML/en/kontact-admin/
 usr/share/icons/hicolor/*/apps/kontact.*
 usr/share/kde4/apps/kontact/
 usr/share/kde4/apps/kontactsummary/
@@ -24,5 +25,4 @@ usr/share/kde4/services/kcmsdsummary.desktop
 usr/share/kde4/services/kcmtodosummary.desktop
 usr/share/kde4/services/kontact/
 usr/share/kde4/services/kontactconfig.desktop
-usr/share/kde4/servicetypes/kontactplugin.desktop
 usr/share/doc/kontact/

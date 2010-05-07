@@ -1,0 +1,5 @@
+category: KDE
+requires: akonadi libakonadiprotocolinternals1 libgcc1 libkdecore5 libkdepim4 libkpim4 libnepomuk4 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtSql4 libstdc++6
+external-source: kdepim
+sdesc: "KDE Akonadi management console"
+ldesc: "KDE Akonadi management console"

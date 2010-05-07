@@ -1,7 +1,5 @@
 usr/bin/*akregator*
-usr/include/kde4/akregator/
 usr/lib/kde4/akregator*.dll
-usr/lib/kde4/lib/libakregator*
 usr/share/applications/kde4/akregator.desktop
 usr/share/dbus-1/interfaces/org.kde.akregator.part.xml
 usr/share/doc/HTML/en/akregator/

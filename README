@@ -15,23 +15,26 @@ KDE PIM suite:
 * ktimetracker: time tracker
 
 Runtime requirements:
-  cygwin-1.7.1-1
+  cygwin-1.7.5-1
+  libakonadiprotocolinternals1-1.3.1-1
   libgcc1-4.3.4-3
-  libgpg-error-1.6-1
-  libkdecore5-4.3.5-1
-  libknotificationitem1_1-4.3.5-1
-  libkpim4-4.3.5-1
-  libphonon4-4.3.1-2
-  libQt3Support4-4.5.3-2
-  libQtCore4-4.5.3-2
-  libQtDBus4-4.5.3-2
-  libQtDesigner4-4.5.3-2
-  libQtGui4-4.5.3-2
-  libQtNetwork4-4.5.3-2
-  libQtXml4-4.5.3-2
+  libgpg-error0-1.7-1
+  libgpgme11-1.1.8-2
+  libkdecore5-4.4.3-1
+  libkpim4-4.4.3-1
+  libnepomuk4-4.4.3-1
+  libphonon4-4.4.0-1
+  libQt3Support4-4.6.2-1
+  libQtCore4-4.6.2-1
+  libQtDBus4-4.6.2-1
+  libQtDesigner4-4.6.2-1
+  libQtGui4-4.6.2-1
+  libQtNetwork4-4.6.2-1
+  libQtSql4-4.6.2-1
+  libQtXml4-4.6.2-1
   libstdc++6-4.3.4-3
-  libstreamanalyzer0-0.7.0-1
-  libX11_6-1.3.2-2
+  libstreamanalyzer0-0.7.2-1
+  libX11_6-1.3.3-1
   libXss1-1.2.0-1
   zlib0-1.2.3-10
 
@@ -51,43 +54,46 @@ Canonical website:
   http://www.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/4.3.5/
+  ftp://ftp.kde.org/pub/kde/stable/4.4.3/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdepim-4.3.5-X-src.tar.bz2
+  unpack kdepim-4.4.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdepim-4.3.5-X.cygport all
+  cygport ./kdepim-4.4.3-X.cygport all
 
 This will create:
-  /usr/src/akregator-4.3.5-X.tar.bz2
-  /usr/src/kaddressbook-4.3.5-X.tar.bz2
-  /usr/src/kalarm-4.3.5-X.tar.bz2
-  /usr/src/kdepim-4.3.5-X-src.tar.bz2
-  /usr/src/kdepim-4.3.5-X.tar.bz2
-  /usr/src/kdepim-groupware-4.3.5-X.tar.bz2
-  /usr/src/kjots-4.3.5-X.tar.bz2
-  /usr/src/kleopatra-4.3.5-X.tar.bz2
-  /usr/src/kmail-4.3.5-X.tar.bz2
-  /usr/src/knode-4.3.5-X.tar.bz2
-  /usr/src/knotes-4.3.5-X.tar.bz2
-  /usr/src/konsolekalendar-4.3.5-X.tar.bz2
-  /usr/src/kontact-4.3.5-X.tar.bz2
-  /usr/src/korganizer-4.3.5-X.tar.bz2
-  /usr/src/ktimetracker-4.3.5-X.tar.bz2
-  /usr/src/libkdepim4-4.3.5-X.tar.bz2
-  /usr/src/libkleo4-devel-4.3.5-X.tar.bz2
-  /usr/src/libkleo4-4.3.5-X.tar.bz2
-  /usr/src/libkpgp4-devel-4.3.5-X.tar.bz2
-  /usr/src/libkpgp4-4.3.5-X.tar.bz2
-  /usr/src/strigi-analyzer-kdepim-4.3.5-X.tar.bz2
+  /usr/src/akonadiconsole-4.4.3-X.tar.bz2
+  /usr/src/akregator-4.4.3-X.tar.bz2
+  /usr/src/blogilo-4.4.3-X.tar.bz2
+  /usr/src/kaddressbook-4.4.3-X.tar.bz2
+  /usr/src/kalarm-4.4.3-X.tar.bz2
+  /usr/src/kdepim-4.4.3-X-src.tar.bz2
+  /usr/src/kdepim-4.4.3-X.tar.bz2
+  /usr/src/kdepim-groupware-4.4.3-X.tar.bz2
+  /usr/src/kjots-4.4.3-X.tar.bz2
+  /usr/src/kleopatra-4.4.3-X.tar.bz2
+  /usr/src/kmail-4.4.3-X.tar.bz2
+  /usr/src/knode-4.4.3-X.tar.bz2
+  /usr/src/knotes-4.4.3-X.tar.bz2
+  /usr/src/konsolekalendar-4.4.3-X.tar.bz2
+  /usr/src/kontact-4.4.3-X.tar.bz2
+  /usr/src/korganizer-4.4.3-X.tar.bz2
+  /usr/src/ktimetracker-4.4.3-X.tar.bz2
+  /usr/src/libkdepim4-4.4.3-X.tar.bz2
+  /usr/src/strigi-analyzer-kdepim-4.4.3-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 4.4.3-1 -----
+Version bump for KDE 4.4.
+Added: akonadiconsole, blogilo.
+Consolidated all libraries into libkdepim4.
 
 ----- version 4.3.5-1 -----
 Version bump.

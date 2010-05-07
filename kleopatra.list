@@ -2,8 +2,10 @@ usr/bin/kgpgconf.exe
 usr/bin/kleopatra.exe
 usr/bin/kwatchgnupg.exe
 usr/lib/kde4/kcm_kleopatra.dll
+usr/share/applications/kde4/kleopatra.desktop
 usr/share/applications/kde4/kleopatra_import.desktop
 usr/share/doc/HTML/en/kleopatra/
+usr/share/doc/HTML/en/kwatchgnupg/
 usr/share/icons/oxygen/*/apps/kleopatra.*
 usr/share/kde4/apps/kleopatra/
 usr/share/kde4/apps/kwatchgnupg/
