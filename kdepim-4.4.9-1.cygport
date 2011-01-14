@@ -7,6 +7,6 @@ PKG_NAMES="${PN} ${PN}-groupware akonadiconsole akregator blogilo \
            konsolekalendar kontact korganizer ktimetracker \
            libkdepim4 strigi-analyzer-kdepim"
 
-kdepim_CONTENTS="etc/ usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
+kdepim_CONTENTS="etc/ usr/share/doc/${PN}/"
 ksendemail_CONTENTS="usr/bin/ksendemail.exe"
-PKG_IGNORE="usr/lib/kde4/lib/"
+PKG_IGNORE="usr/lib/lib*"
