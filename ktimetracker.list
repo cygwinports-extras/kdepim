@@ -4,8 +4,10 @@ usr/lib/kde4/kcm_ktimetracker.dll
 usr/lib/kde4/ktimetrackerpart.dll
 usr/share/applications/kde4/ktimetracker.desktop
 usr/share/dbus-1/interfaces/org.kde.ktimetracker.ktimetracker.xml
-usr/share/doc/HTML/en/ktimetracker/
+usr/share/doc/HTML/*/ktimetracker/
 usr/share/icons/hicolor/*/apps/ktimetracker.*
 usr/share/kde4/apps/ktimetracker/
-usr/share/kde4/services/ktimetracker*
+usr/share/kde4/services/ktimetrackerpart.desktop
+usr/share/kde4/services/ktimetracker_config_*
+usr/share/locale/*/LC_MESSAGES/ktimetracker.mo
 usr/share/doc/ktimetracker/

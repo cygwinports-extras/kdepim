@@ -1,15 +1,8 @@
-usr/bin/cygkaddressbookprivate-4.dll
-usr/bin/kabc2mutt.exe
-usr/bin/kabcclient.exe
+usr/bin/cygkaddressbook*
 usr/bin/kaddressbook.exe
-usr/lib/akonadi/contact/editorpageplugins/cryptopageplugin.dll
 usr/lib/kde4/kaddressbookpart.dll
-usr/lib/kde4/kcm_ldap.dll
-usr/lib/kde4/ktexteditorkabcbridge.dll
 usr/share/applications/kde4/kaddressbook.desktop
-usr/share/doc/HTML/en/kabcclient/
 usr/share/icons/hicolor/*/apps/kaddressbook.*
 usr/share/kde4/apps/kaddressbook/
 usr/share/kde4/services/kaddressbookpart.desktop
-usr/share/kde4/services/kcmldap.desktop
-usr/share/man/man1/kabcclient.*
+usr/share/locale/*/LC_MESSAGES/kaddressbook.mo

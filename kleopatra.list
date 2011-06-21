@@ -4,9 +4,11 @@ usr/bin/kwatchgnupg.exe
 usr/lib/kde4/kcm_kleopatra.dll
 usr/share/applications/kde4/kleopatra.desktop
 usr/share/applications/kde4/kleopatra_import.desktop
-usr/share/doc/HTML/en/kleopatra/
-usr/share/doc/HTML/en/kwatchgnupg/
-usr/share/icons/oxygen/*/apps/kleopatra.*
+usr/share/doc/HTML/*/kwatchgnupg/
+usr/share/doc/HTML/*/kleopatra/
+usr/share/icons/hicolor/*/apps/kleopatra.*
 usr/share/kde4/apps/kleopatra/
 usr/share/kde4/apps/kwatchgnupg/
 usr/share/kde4/services/kleopatra_*
+usr/share/locale/*/LC_MESSAGES/kleopatra.mo
+usr/share/locale/*/LC_MESSAGES/kwatchgnupg.mo

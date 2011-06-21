@@ -1,5 +1,5 @@
 category: KDE
-requires: libgcc1 libkdecore5 libkdepim4 libkpim4 libphonon4 libQtCore4 libQtDBus4 libQtGui4 libstdc++6 libX11_6
+requires: libgcc1 libkdecore5 libkdepim4 libkpim4 libphonon4 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libstdc++6 libX11_6
 external-source: kdepim
 sdesc: "KDE alarm and command scheduler"
 ldesc: "KDE alarm and command scheduler"

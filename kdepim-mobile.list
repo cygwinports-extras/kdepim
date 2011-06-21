@@ -1,0 +1,14 @@
+usr/bin/cygkdepimmobileui-4.dll
+usr/bin/*-mobile.exe
+usr/lib/kde4/imports/org/kde/pim/mobileui/
+usr/share/applications/kde4/*-mobile.desktop
+usr/share/icons/hicolor/*/apps/*-mobile.*
+usr/share/kde4/apps/kaddressbook-mobile/
+usr/share/kde4/apps/kmail-mobile/
+usr/share/kde4/apps/kontact-touch/
+usr/share/kde4/apps/korganizer-mobile/
+usr/share/kde4/apps/mobileui/
+usr/share/kde4/apps/notes-mobile/
+usr/share/kde4/apps/tasks-mobile/
+usr/share/locale/*/LC_MESSAGES/*-mobile.mo
+usr/share/locale/*/LC_MESSAGES/libkdepimmobileui.mo

@@ -1,0 +1,5 @@
+usr/bin/kabc2mutt.exe
+usr/bin/kabcclient.exe
+usr/share/doc/HTML/*/kabcclient/
+usr/share/man/man1/kabcclient.*
+usr/share/locale/*/LC_MESSAGES/kabcclient.mo

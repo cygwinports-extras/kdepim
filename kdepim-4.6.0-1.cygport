@@ -1,12 +1,12 @@
 inherit kde4
 
-PATCH_URI="4.3.4-kabcclient-install.patch"
+PATCH_URI="4.3.4-kabcclient-install.patch
+           4.6.0-no-undefined.patch"
 
-PKG_NAMES="${PN} ${PN}-groupware akonadiconsole akregator blogilo \
+PKG_NAMES="${PN} ${PN}-mobile akonadiconsole akregator blogilo kabcclient \
            kaddressbook kalarm kjots kleopatra kmail knode knotes \
            konsolekalendar kontact korganizer ktimetracker \
            libkdepim4 strigi-analyzer-kdepim"
 
 kdepim_CONTENTS="etc/ usr/share/doc/${PN}/"
-ksendemail_CONTENTS="usr/bin/ksendemail.exe"
 PKG_IGNORE="usr/lib/lib*"

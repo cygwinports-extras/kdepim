@@ -1,5 +1,5 @@
 category: KDE
-requires: akregator kaddressbook kalarm kdepim-groupware kdepim-runtime kjots kleopatra kmail knode knotes konsolekalendar kontact korganizer ktimetracker strigi-analyzer-kdepim
+requires: akregator kabcclient kaddressbook kalarm kdepim-runtime kjots kleopatra kmail knode knotes konsolekalendar kontact korganizer ktimetracker strigi-analyzer-kdepim
 sdesc: "KDE PIM suite (meta-package)"
 ldesc: "KDE PIM suite:
 * akregator: RSS feed reader
