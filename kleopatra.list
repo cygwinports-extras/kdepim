@@ -10,5 +10,3 @@ usr/share/icons/hicolor/*/apps/kleopatra.*
 usr/share/kde4/apps/kleopatra/
 usr/share/kde4/apps/kwatchgnupg/
 usr/share/kde4/services/kleopatra_*
-usr/share/locale/*/LC_MESSAGES/kleopatra.mo
-usr/share/locale/*/LC_MESSAGES/kwatchgnupg.mo

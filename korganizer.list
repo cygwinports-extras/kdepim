@@ -29,5 +29,4 @@ usr/share/kde4/services/webcal.protocol
 usr/share/kde4/servicetypes/dbuscalendar.desktop
 usr/share/kde4/servicetypes/korganizerpart.desktop
 usr/share/kde4/servicetypes/korgprintplugin.desktop
-usr/share/locale/*/LC_MESSAGES/korganizer.mo
 usr/share/doc/korganizer/

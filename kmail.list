@@ -20,12 +20,8 @@ usr/share/kde4/apps/kmail2/
 usr/share/kde4/apps/kmailcvt/
 usr/share/kde4/config/kmail.antispamrc
 usr/share/kde4/config/kmail.antivirusrc
-usr/share/kde4/config.kcfg/custommimeheader.kcfg
 usr/share/kde4/config.kcfg/kmail.kcfg
 usr/share/kde4/services/kcm_kpimidentities.desktop
 usr/share/kde4/services/kmail_config_*
 usr/share/kde4/services/ServiceMenus/kmail_addattachmentservicemenu.desktop
 usr/share/kde4/servicetypes/dbusmail.desktop
-usr/share/locale/*/LC_MESSAGES/kmail.mo
-usr/share/locale/*/LC_MESSAGES/kmailcvt.mo
-usr/share/locale/*/LC_MESSAGES/ksendemail.mo

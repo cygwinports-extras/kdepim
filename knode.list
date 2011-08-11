@@ -10,5 +10,4 @@ usr/share/kde4/apps/kconf_update/knode.upd
 usr/share/kde4/apps/knode/
 usr/share/kde4/services/knewsservice.protocol
 usr/share/kde4/services/knode_config_*
-usr/share/locale/*/LC_MESSAGES/knode.mo
 usr/share/doc/knode/

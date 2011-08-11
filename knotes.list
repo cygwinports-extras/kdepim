@@ -12,5 +12,4 @@ usr/share/kde4/config.kcfg/knotesglobalconfig.kcfg
 usr/share/kde4/services/knote_config_*
 usr/share/kde4/services/kresources/knotes/
 usr/share/kde4/services/kresources/knotes_manager.desktop
-usr/share/locale/*/LC_MESSAGES/knotes.mo
 usr/share/doc/knotes/

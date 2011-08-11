@@ -10,5 +10,3 @@ usr/share/kde4/apps/korganizer-mobile/
 usr/share/kde4/apps/mobileui/
 usr/share/kde4/apps/notes-mobile/
 usr/share/kde4/apps/tasks-mobile/
-usr/share/locale/*/LC_MESSAGES/*-mobile.mo
-usr/share/locale/*/LC_MESSAGES/libkdepimmobileui.mo

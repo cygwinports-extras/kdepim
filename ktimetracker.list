@@ -9,5 +9,4 @@ usr/share/icons/hicolor/*/apps/ktimetracker.*
 usr/share/kde4/apps/ktimetracker/
 usr/share/kde4/services/ktimetrackerpart.desktop
 usr/share/kde4/services/ktimetracker_config_*
-usr/share/locale/*/LC_MESSAGES/ktimetracker.mo
 usr/share/doc/ktimetracker/

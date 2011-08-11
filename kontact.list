@@ -23,5 +23,4 @@ usr/share/kde4/services/kcmsdsummary.desktop
 usr/share/kde4/services/kcmtodosummary.desktop
 usr/share/kde4/services/kontact/
 usr/share/kde4/services/kontactconfig.desktop
-usr/share/locale/*/LC_MESSAGES/kontact.mo
 usr/share/doc/kontact/

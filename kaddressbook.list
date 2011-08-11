@@ -5,4 +5,3 @@ usr/share/applications/kde4/kaddressbook.desktop
 usr/share/icons/hicolor/*/apps/kaddressbook.*
 usr/share/kde4/apps/kaddressbook/
 usr/share/kde4/services/kaddressbookpart.desktop
-usr/share/locale/*/LC_MESSAGES/kaddressbook.mo

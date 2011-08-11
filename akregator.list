@@ -10,5 +10,4 @@ usr/share/kde4/config.kcfg/akregator.kcfg
 usr/share/kde4/services/akregator_*
 usr/share/kde4/services/feed.protocol
 usr/share/kde4/servicetypes/akregator_plugin.desktop
-usr/share/locale/*/LC_MESSAGES/akregator.mo
 usr/share/doc/akregator/
