@@ -7,5 +7,5 @@ PKG_NAMES="${PN} ${PN}-mobile akonadiconsole akregator blogilo kabcclient \
            konsolekalendar kontact korganizer ktimetracker \
            libkdepim4 strigi-analyzer-kdepim"
 
-kdepim_CONTENTS="etc/ usr/share/doc/${PN}/"
+kdepim_CONTENTS="etc/postinstall/ usr/share/doc/${PN}/"
 PKG_IGNORE="usr/lib/lib*"

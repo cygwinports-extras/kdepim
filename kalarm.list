@@ -1,3 +1,4 @@
+etc/dbus-1/system.d/org.kde.kalarmrtcwake.conf
 usr/bin/*kalarm*
 usr/lib/kde4/kalarm_*
 usr/lib/kde4/libexec/kalarm_helper.exe
