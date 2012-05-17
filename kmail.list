@@ -1,3 +1,4 @@
+usr/bin/akonadi_mailfilter_agent.exe
 usr/bin/cygkmailprivate-4.dll
 usr/bin/kmail.exe
 usr/bin/kmailcvt.exe
@@ -6,6 +7,7 @@ usr/bin/ksendemail.exe
 usr/lib/kde4/kcm_kmail.dll
 usr/lib/kde4/kcm_kpimidentities.dll
 usr/lib/kde4/kmailpart.dll
+usr/share/akonadi/agents/mailfilteragent.desktop
 usr/share/applications/kde4/KMail2.desktop
 usr/share/applications/kde4/kmail_view.desktop
 usr/share/dbus-1/interfaces/org.kde.kmail.*
@@ -13,6 +15,8 @@ usr/share/doc/HTML/*/kmail/
 usr/share/icons/hicolor/*/apps/kmail.*
 usr/share/icons/oxygen/*/apps/kmailcvt.*
 usr/share/kde4/apps/kconf_update/kmail*
+usr/share/kde4/apps/kconf_update/mailfilteragent.upd
+usr/share/kde4/apps/kconf_update/migrate-kmail-filters.pl
 usr/share/kde4/apps/kconf_update/upgrade-signature.pl
 usr/share/kde4/apps/kconf_update/upgrade-transport.pl
 usr/share/kde4/apps/kmail/

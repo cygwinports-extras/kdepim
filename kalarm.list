@@ -1,6 +1,5 @@
 etc/dbus-1/system.d/org.kde.kalarmrtcwake.conf
 usr/bin/*kalarm*
-usr/lib/kde4/kalarm_*
 usr/lib/kde4/libexec/kalarm_helper.exe
 usr/share/applications/kde4/kalarm.desktop
 usr/share/autostart/kalarm.autostart.desktop
@@ -11,6 +10,4 @@ usr/share/icons/*/*/apps/kalarm.*
 usr/share/kde4/apps/kalarm/
 usr/share/kde4/apps/kconf_update/kalarm*
 usr/share/kde4/config.kcfg/kalarmconfig.kcfg
-usr/share/kde4/services/kresources/alarms/
-usr/share/kde4/services/kresources/kalarm_manager.desktop
 usr/share/doc/kalarm/
