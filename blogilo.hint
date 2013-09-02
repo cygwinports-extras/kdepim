@@ -1,5 +1,0 @@
-category: KDE
-requires: libgcc1 libkdecore5 libkdepim4 libkpim4 libQtCore4 libQtGui4 libQtSql4 libQtWebKit4 libstdc++6
-external-source: kdepim
-sdesc: "KDE blogging application"
-ldesc: "KDE blogging application"

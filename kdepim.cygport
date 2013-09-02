@@ -1,0 +1,392 @@
+inherit kde4
+
+NAME="kdepim"
+VERSION=4.10.5
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="KDE PIM suite"
+DESCRIPTION="Part of the KDE PIM suite"
+
+PATCH_URI="4.3.4-kabcclient-install.patch"
+
+PKG_NAMES="${NAME} ${NAME}-mobile akonadiconsole akregator blogilo kabcclient \
+           kaddressbook kalarm kjots kleopatra kmail knode knotes \
+           konsolekalendar kontact korganizer ktimetracker ktnef libkdepim4 \
+           kdepim-strigi-analyzers"
+kdepim_mobile_SUMMARY="KDE PIM mobile suite"
+kdepim_mobile_CONTENTS="
+	etc/postinstall/
+	usr/bin/cygkdepimmobileui-4.dll
+	usr/bin/*-mobile.exe
+	usr/lib/kde4/imports/org/kde/pim/mobileui/
+	usr/share/applications/kde4/*-mobile.desktop
+	usr/share/icons/hicolor/*/apps/*-mobile.*
+	usr/share/icons/hicolor/*/apps/*-mobile-*.*
+	usr/share/kde4/apps/kaddressbook-mobile/
+	usr/share/kde4/apps/kmail-mobile/
+	usr/share/kde4/apps/kontact-touch/
+	usr/share/kde4/apps/korganizer-mobile/
+	usr/share/kde4/apps/mobileui/
+	usr/share/kde4/apps/notes-mobile/
+	usr/share/kde4/apps/tasks-mobile/
+"
+akonadiconsole_SUMMARY="KDE Akonadi management console"
+akonadiconsole_CONTENTS="
+	etc/postinstall/
+	usr/bin/akonadiconsole.exe
+	usr/share/applications/kde4/akonadiconsole.desktop
+	usr/share/icons/hicolor/*/apps/akonadiconsole.*
+	usr/share/kde4/apps/akonadiconsole/
+"
+akregator_SUMMARY="KDE RSS feed reader"
+akregator_CONTENTS="
+	etc/postinstall/
+	usr/bin/*akregator*
+	usr/lib/kde4/akregator*
+	usr/share/applications/kde4/akregator.desktop
+	usr/share/dbus-1/interfaces/org.kde.akregator.part.xml
+	usr/share/doc/HTML/*/akregator/
+	usr/share/icons/hicolor/*/apps/akregator*
+	usr/share/kde4/apps/akregator/
+	usr/share/kde4/apps/akregator_sharemicroblog_plugin/
+	usr/share/kde4/config.kcfg/akregator.kcfg
+	usr/share/kde4/services/akregator_*
+	usr/share/kde4/services/feed.protocol
+	usr/share/kde4/servicetypes/akregator_plugin.desktop
+	usr/share/doc/akregator/
+"
+blogilo_SUMMARY="KDE blogging application"
+blogilo_CONTENTS="
+	etc/postinstall/
+	usr/bin/blogilo.exe
+	usr/share/applications/kde4/blogilo.desktop
+	usr/share/doc/HTML/*/blogilo/
+	usr/share/icons/hicolor/*/actions/format-text-blockquote.*
+	usr/share/icons/hicolor/*/actions/format-text-code.*
+	usr/share/icons/hicolor/*/actions/insert-more-mark.*
+	usr/share/icons/hicolor/*/actions/remove-link.*
+	usr/share/icons/hicolor/*/actions/upload-media.*
+	usr/share/icons/hicolor/*/apps/blogilo.*
+	usr/share/kde4/apps/blogilo/
+	usr/share/kde4/config.kcfg/blogilo.kcfg
+	usr/share/doc/blogilo/
+"
+kabcclient_SUMMARY="KDE commandline address book"
+kabcclient_CONTENTS="
+	usr/bin/kabc2mutt.exe
+	usr/bin/kabcclient.exe
+	usr/share/doc/HTML/*/kabcclient/
+	usr/share/man/man1/kabcclient.*
+"
+kaddressbook_SUMMARY="KDE address book"
+kaddressbook_CONTENTS="
+	etc/postinstall/
+	usr/bin/cygkaddressbook*
+	usr/bin/kaddressbook.exe
+	usr/lib/kde4/kaddressbookpart.dll
+	usr/share/applications/kde4/kaddressbook.desktop
+	usr/share/icons/hicolor/*/apps/kaddressbook.*
+	usr/share/kde4/apps/kaddressbook/
+	usr/share/kde4/services/kaddressbookpart.desktop
+"
+kalarm_SUMMARY="KDE alarm and command scheduler"
+kalarm_CONTENTS="
+	etc/dbus-1/system.d/org.kde.kalarmrtcwake.conf
+	etc/postinstall/
+	usr/bin/*kalarm*
+	usr/lib/kde4/libexec/kalarm_helper.exe
+	usr/share/applications/kde4/kalarm.desktop
+	usr/share/autostart/kalarm.autostart.desktop
+	usr/share/dbus-1/interfaces/org.kde.kalarm.kalarm.xml
+	usr/share/dbus-1/system-services/org.kde.kalarmrtcwake.service
+	usr/share/doc/HTML/*/kalarm/
+	usr/share/icons/*/*/apps/kalarm.*
+	usr/share/kde4/apps/kalarm/
+	usr/share/kde4/apps/kconf_update/kalarm*
+	usr/share/kde4/config.kcfg/kalarmconfig.kcfg
+	usr/share/doc/kalarm/
+"
+kjots_SUMMARY="KDE outline note taker"
+kjots_CONTENTS="
+	etc/postinstall/
+	usr/bin/kjots.exe
+	usr/lib/kde4/kcm_kjots.dll
+	usr/lib/kde4/kjotspart.dll
+	usr/lib/kde4/plasma_applet_akonotes_*
+	usr/share/applications/kde4/Kjots.desktop
+	usr/share/doc/HTML/*/kjots/
+	usr/share/icons/hicolor/*/apps/kjots.*
+	usr/share/icons/oxygen/*/actions/edit-delete-page.*
+	usr/share/kde4/apps/desktoptheme/default/widgets/stickynote.svgz
+	usr/share/kde4/apps/kjots/
+	usr/share/kde4/config.kcfg/kjots.kcfg
+	usr/share/kde4/services/akonotes_list.desktop
+	usr/share/kde4/services/akonotes_note.desktop
+	usr/share/kde4/services/kjotspart.desktop
+	usr/share/kde4/services/kjots_config_misc.desktop
+	usr/share/doc/kjots/
+"
+kleopatra_SUMMARY="KDE certificate manager"
+kleopatra_CONTENTS="
+	etc/postinstall/
+	usr/bin/kgpgconf.exe
+	usr/bin/kleopatra.exe
+	usr/bin/kwatchgnupg.exe
+	usr/lib/kde4/kcm_kleopatra.dll
+	usr/share/applications/kde4/kleopatra.desktop
+	usr/share/applications/kde4/kleopatra_import.desktop
+	usr/share/doc/HTML/*/kwatchgnupg/
+	usr/share/doc/HTML/*/kleopatra/
+	usr/share/icons/hicolor/*/apps/kleopatra.*
+	usr/share/kde4/apps/kleopatra/
+	usr/share/kde4/apps/kwatchgnupg/
+	usr/share/kde4/services/kleopatra_*
+"
+kmail_SUMMARY="KDE mail client"
+kmail_CONTENTS="
+	etc/postinstall/
+	usr/bin/akonadi_archivemail_agent.exe
+	usr/bin/akonadi_mailfilter_agent.exe
+	usr/bin/cygkmailprivate-4.dll
+	usr/bin/kmail.exe
+	usr/bin/kmailcvt.exe
+	usr/bin/kmail_*.sh
+	usr/bin/ksendemail.exe
+	usr/lib/kde4/kcm_kmail.dll
+	usr/lib/kde4/kcm_kpimidentities.dll
+	usr/lib/kde4/kmailpart.dll
+	usr/share/akonadi/agents/archivemailagent.desktop
+	usr/share/akonadi/agents/mailfilteragent.desktop
+	usr/share/applications/kde4/KMail2.desktop
+	usr/share/applications/kde4/kmail_view.desktop
+	usr/share/dbus-1/interfaces/org.kde.kmail.*
+	usr/share/doc/HTML/*/kmail/
+	usr/share/icons/hicolor/*/apps/kmail.*
+	usr/share/icons/oxygen/*/apps/kmailcvt.*
+	usr/share/kde4/apps/akonadi_archivemail_agent/
+	usr/share/kde4/apps/akonadi_mailfilter_agent/
+	usr/share/kde4/apps/kconf_update/kmail*
+	usr/share/kde4/apps/kconf_update/mailfilteragent.upd
+	usr/share/kde4/apps/kconf_update/migrate-kmail-filters.pl
+	usr/share/kde4/apps/kconf_update/upgrade-signature.pl
+	usr/share/kde4/apps/kconf_update/upgrade-transport.pl
+	usr/share/kde4/apps/kmail2/
+	usr/share/kde4/apps/kmailcvt/
+	usr/share/kde4/config/kmail.antispamrc
+	usr/share/kde4/config/kmail.antivirusrc
+	usr/share/kde4/config.kcfg/kmail.kcfg
+	usr/share/kde4/services/kcm_kpimidentities.desktop
+	usr/share/kde4/services/kmail_config_*
+	usr/share/kde4/services/ServiceMenus/kmail_addattachmentservicemenu.desktop
+	usr/share/kde4/servicetypes/dbusmail.desktop
+"
+knode_SUMMARY="KDE news reader"
+knode_CONTENTS="
+	etc/postinstall/
+	usr/bin/cygknodecommon*
+	usr/bin/knode.exe
+	usr/lib/kde4/kcm_knode.dll
+	usr/lib/kde4/knodepart.dll
+	usr/share/applications/kde4/KNode.desktop
+	usr/share/dbus-1/interfaces/org.kde.knode.xml
+	usr/share/doc/HTML/*/knode/
+	usr/share/icons/hicolor/*/apps/knode.*
+	usr/share/kde4/apps/kconf_update/knode.upd
+	usr/share/kde4/apps/knode/
+	usr/share/kde4/services/knode_config_*
+	usr/share/doc/knode/
+"
+knotes_SUMMARY="KDE sticky notes"
+knotes_CONTENTS="
+	etc/postinstall/
+	usr/bin/knotes.exe
+	usr/lib/kde4/kcm_knote.dll
+	usr/lib/kde4/knotes_local.dll
+	usr/share/applications/kde4/knotes.desktop
+	usr/share/dbus-1/interfaces/org.kde.KNotes.*
+	usr/share/doc/HTML/*/knotes/
+	usr/share/icons/hicolor/*/apps/knotes.*
+	usr/share/icons/oxygen/*/actions/knotes_*.*
+	usr/share/kde4/apps/knotes/
+	usr/share/kde4/config.kcfg/knoteconfig.kcfg
+	usr/share/kde4/config.kcfg/knotesglobalconfig.kcfg
+	usr/share/kde4/services/knote_config_*
+	usr/share/kde4/services/kresources/knotes/
+	usr/share/kde4/services/kresources/knotes_manager.desktop
+	usr/share/doc/knotes/
+"
+konsolekalendar_SUMMARY="KDE commandline calendar"
+konsolekalendar_CONTENTS="
+	etc/postinstall/
+	usr/bin/konsolekalendar.exe
+	usr/share/applications/kde4/konsolekalendar.desktop
+	usr/share/doc/HTML/*/konsolekalendar/
+	usr/share/icons/hicolor/*/apps/konsolekalendar.*
+"
+kontact_REQUIRES="akregator kaddressbook kjots kmail knode knotes korganizer ktimetracker ktnef"
+kontact_SUMMARY="KDE PIM application"
+kontact_CONTENTS="
+	etc/postinstall/
+	usr/bin/cygkontactprivate-4.dll
+	usr/bin/kontact.exe
+	usr/bin/importwizard.exe
+	usr/bin/pimsettingexporter.exe
+	usr/lib/kde4/kcm_apptsummary.dll
+	usr/lib/kde4/kcm_kmailsummary.dll
+	usr/lib/kde4/kcm_kontact.dll
+	usr/lib/kde4/kcm_kontactsummary.dll
+	usr/lib/kde4/kcm_sdsummary.dll
+	usr/lib/kde4/kcm_todosummary.dll
+	usr/lib/kde4/kontact_*
+	usr/share/applications/kde4/importwizard.desktop
+	usr/share/applications/kde4/kontact-admin.desktop
+	usr/share/applications/kde4/Kontact.desktop
+	usr/share/dbus-1/interfaces/org.kde.kontact.KNotes.xml
+	usr/share/doc/HTML/*/kontact/
+	usr/share/doc/HTML/*/kontact-admin/
+	usr/share/icons/hicolor/*/apps/kontact.*
+	usr/share/icons/hicolor/*/apps/kontact-import-wizard.*
+	usr/share/kde4/apps/kontact/
+	usr/share/kde4/apps/kontactsummary/
+	usr/share/kde4/apps/pimsettingexporter/
+	usr/share/kde4/config.kcfg/kontact.kcfg
+	usr/share/kde4/services/kcmapptsummary.desktop
+	usr/share/kde4/services/kcmkmailsummary.desktop
+	usr/share/kde4/services/kcmkontactsummary.desktop
+	usr/share/kde4/services/kcmsdsummary.desktop
+	usr/share/kde4/services/kcmtodosummary.desktop
+	usr/share/kde4/services/kontact/
+	usr/share/kde4/services/kontactconfig.desktop
+	usr/share/doc/kontact/
+"
+korganizer_SUMMARY="KDE calendar and scheduler"
+korganizer_CONTENTS="
+	etc/postinstall/
+	usr/bin/cygkorganizerprivate-4.dll
+	usr/bin/cygkorganizer_core-4.dll
+	usr/bin/cygkorganizer_interfaces-4.dll
+	usr/bin/ical2vcal
+	usr/bin/korgac.exe
+	usr/bin/korganizer.exe
+	usr/lib/kde4/kcm_korganizer.dll
+	usr/lib/kde4/korganizerpart.dll
+	usr/lib/kde4/korg_*
+	usr/share/applications/kde4/korganizer-import.desktop
+	usr/share/applications/kde4/korganizer.desktop
+	usr/share/autostart/korgac.desktop
+	usr/share/dbus-1/interfaces/org.kde.*organizer.*
+	usr/share/doc/HTML/*/korganizer/
+	usr/share/icons/hicolor/*/apps/korg-journal.*
+	usr/share/icons/hicolor/*/apps/korg-todo.*
+	usr/share/icons/hicolor/*/apps/korganizer.*
+	usr/share/icons/oxygen/*/actions/smallclock.*
+	usr/share/icons/oxygen/*/actions/upindicator*
+	usr/share/icons/oxygen/*/actions/checkmark.*
+	usr/share/kde4/apps/kconf_update/korganizer.upd
+	usr/share/kde4/apps/korgac/
+	usr/share/kde4/apps/korganizer/
+	usr/share/kde4/config/korganizer.knsrc
+	usr/share/kde4/config.kcfg/korganizer.kcfg
+	usr/share/kde4/services/korganizer/
+	usr/share/kde4/services/korganizer_*
+	usr/share/kde4/services/webcal.protocol
+	usr/share/kde4/servicetypes/dbuscalendar.desktop
+	usr/share/kde4/servicetypes/korganizerpart.desktop
+	usr/share/kde4/servicetypes/korgprintplugin.desktop
+	usr/share/doc/korganizer/
+"
+ktimetracker_SUMMARY="KDE time tracker"
+ktimetracker_CONTENTS="
+	etc/postinstall/
+	usr/bin/karm.exe
+	usr/bin/ktimetracker.exe
+	usr/lib/kde4/kcm_ktimetracker.dll
+	usr/lib/kde4/ktimetrackerpart.dll
+	usr/share/applications/kde4/ktimetracker.desktop
+	usr/share/dbus-1/interfaces/org.kde.ktimetracker.ktimetracker.xml
+	usr/share/doc/HTML/*/ktimetracker/
+	usr/share/icons/hicolor/*/apps/ktimetracker.*
+	usr/share/kde4/apps/ktimetracker/
+	usr/share/kde4/services/ktimetrackerpart.desktop
+	usr/share/kde4/services/ktimetracker_config_*
+	usr/share/doc/ktimetracker/
+"
+ktnef_SUMMARY="KDE TNEF file viewer"
+ktnef_CONTENTS="
+	etc/postinstall/
+	usr/bin/ktnef.exe
+	usr/share/applications/kde4/ktnef.desktop
+	usr/share/doc/HTML/en/ktnef/
+	usr/share/doc/ktnef/
+	usr/share/icons/*/*/actions/ktnef_*
+	usr/share/icons/*/*/apps/ktnef.*
+	usr/share/kde4/apps/ktnef/
+"
+libkdepim4_REQUIRES="kdepim-runtime"
+libkdepim4_SUMMARY="KDE PIM suite internal libraries"
+libkdepim4_CONTENTS="
+	etc/postinstall/
+	usr/bin/cygakonadi_next-4.dll
+	usr/bin/cygcalendarsupport-4.dll
+	usr/bin/cygeventviews-4.dll
+	usr/bin/cygincidenceeditorsng-4.dll
+	usr/bin/cygincidenceeditorsngmobile-4.dll
+	usr/bin/cygkcal_resourceblog-4.dll
+	usr/bin/cygkcal_resourceremote-4.dll
+	usr/bin/cygkdepim-4.dll
+	usr/bin/cygkdepimdbusinterfaces-4.dll
+	usr/bin/cygkdgantt2-0.dll
+	usr/bin/cygkleo-4.dll
+	usr/bin/cygkmanagesieve-4.dll
+	usr/bin/cygkpgp-4.dll
+	usr/bin/cygksieve-4.dll
+	usr/bin/cygksieveui-4.dll
+	usr/bin/cygmailcommon-4.dll
+	usr/bin/cygmailimporter-4.dll
+	usr/bin/cygmessagecomposer-4.dll
+	usr/bin/cygmessagecore-4.dll
+	usr/bin/cygmessagelist-4.dll
+	usr/bin/cygmessageviewer-4.dll
+	usr/bin/cygpimcommon-4.dll
+	usr/bin/cygtemplateparser-4.dll
+	usr/bin/kincidenceeditor.exe
+	usr/lib/akonadi/contact/editorpageplugins/cryptopageplugin.dll
+	usr/lib/kde4/kcal_blog.dll
+	usr/lib/kde4/kcal_remote.dll
+	usr/lib/kde4/kcm_ldap.dll
+	usr/lib/kde4/ktexteditorkabcbridge.dll
+	usr/lib/kde4/messageviewer_bodypartformatter_application_mstnef.dll
+	usr/lib/kde4/messageviewer_bodypartformatter_text_calendar.dll
+	usr/lib/kde4/messageviewer_bodypartformatter_text_vcard.dll
+	usr/lib/kde4/messageviewer_bodypartformatter_text_xdiff.dll
+	usr/lib/kde4/plugins/accessible/messagevieweraccessiblewidgetfactory.dll
+	usr/lib/kde4/plugins/designer/kdepimwidgets.dll
+	usr/share/dbus-1/interfaces/org.kde.addressbook.service.xml
+	usr/share/dbus-1/interfaces/org.kde.mailtransport.service.xml
+	usr/share/doc/HTML/en/kioslave/news/
+	usr/share/icons/oxygen/*/mimetypes/x-mail-distribution-list.*
+	usr/share/kde4/apps/kconf_update/kpgp-3.1-upgrade-address-data.pl
+	usr/share/kde4/apps/kconf_update/kpgp.upd
+	usr/share/kde4/apps/kdepimwidgets/
+	usr/share/kde4/apps/libkleopatra/
+	usr/share/kde4/apps/libmessageviewer/
+	usr/share/kde4/apps/messagelist/
+	usr/share/kde4/apps/messageviewer/
+	usr/share/kde4/config/libkleopatrarc
+	usr/share/kde4/config.kcfg/customtemplates_kfg.kcfg
+	usr/share/kde4/config.kcfg/templatesconfiguration_kfg.kcfg
+	usr/share/kde4/services/kcmldap.desktop
+	usr/share/kde4/services/kresources/kcal/
+	usr/share/kde4/servicetypes/calendardecoration.desktop
+	usr/share/kde4/servicetypes/calendarplugin.desktop
+	usr/share/ontology/kde/messagetag.*
+"
+kdepim_strigi_analyzers_SUMMARY="Strigi PIM file analyzers"
+kdepim_strigi_analyzers_OBSOLETES="strigi-analyzer-kdepim"
+kdepim_strigi_analyzers_CONTENTS="
+	usr/lib/strigi/strigiea_ctg.dll
+	usr/lib/strigi/strigiea_ics.dll
+	usr/lib/strigi/strigiea_mail.dll
+	usr/lib/strigi/strigiea_vcf.dll
+"
+PKG_IGNORE="usr/lib/lib*"

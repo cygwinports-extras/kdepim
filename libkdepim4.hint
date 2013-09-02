@@ -1,5 +1,0 @@
-category: KDE
-requires: kdepim-runtime libgcc1 libkdecore5 libkpim4 libQt3Support4 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtWebKit4 libQtXml4 libsasl2 libsoprano4 libstreamanalyzer0 libstdc++6
-external-source: kdepim
-sdesc: "KDE PIM suite libraries"
-ldesc: "KDE PIM suite"

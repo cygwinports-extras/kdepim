@@ -1,5 +1,0 @@
-category: KDE
-requires: libgcc1 libkdecore5 libkdepim4 libkpim4 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtXml4 libstdc++6 libX11_6
-external-source: kdepim
-sdesc: "KDE sticky notes"
-ldesc: "KDE sticky notes"

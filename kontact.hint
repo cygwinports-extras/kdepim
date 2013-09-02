@@ -1,5 +1,0 @@
-category: KDE Mail News
-requires: akregator kaddressbook kjots kmail knode knotes korganizer ktimetracker libgcc1 libkdecore5 libkdepim4 libkpim4 libQtCore4 libQtDBus4 libQtGui4 libQtWebKit4 libstdc++6
-external-source: kdepim
-sdesc: "KDE PIM application"
-ldesc: "KDE PIM application"
