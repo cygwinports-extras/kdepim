@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kdepim"
-VERSION=4.10.5
+VERSION=4.11.5
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE PIM suite"
@@ -9,10 +9,9 @@ DESCRIPTION="Part of the KDE PIM suite"
 
 PATCH_URI="4.3.4-kabcclient-install.patch"
 
-PKG_NAMES="${NAME} ${NAME}-mobile akonadiconsole akregator blogilo kabcclient \
+PKG_NAMES="${NAME} ${NAME}-libs akonadiconsole akregator blogilo kabcclient \
            kaddressbook kalarm kjots kleopatra kmail knode knotes \
-           konsolekalendar kontact korganizer ktimetracker ktnef libkdepim4 \
-           kdepim-strigi-analyzers"
+           konsolekalendar kontact korganizer ktimetracker ktnef"
 kdepim_mobile_SUMMARY="KDE PIM mobile suite"
 kdepim_mobile_CONTENTS="
 	etc/postinstall/
@@ -145,9 +144,9 @@ kleopatra_CONTENTS="
 kmail_SUMMARY="KDE mail client"
 kmail_CONTENTS="
 	etc/postinstall/
-	usr/bin/akonadi_archivemail_agent.exe
-	usr/bin/akonadi_mailfilter_agent.exe
+	usr/bin/akonadi_*_agent.exe
 	usr/bin/cygkmailprivate-4.dll
+	usr/bin/headerthemeeditor.exe
 	usr/bin/kmail.exe
 	usr/bin/kmailcvt.exe
 	usr/bin/kmail_*.sh
@@ -155,16 +154,19 @@ kmail_CONTENTS="
 	usr/lib/kde4/kcm_kmail.dll
 	usr/lib/kde4/kcm_kpimidentities.dll
 	usr/lib/kde4/kmailpart.dll
-	usr/share/akonadi/agents/archivemailagent.desktop
-	usr/share/akonadi/agents/mailfilteragent.desktop
+	usr/share/akonadi/agents/
+	usr/share/applications/kde4/headerthemeeditor.desktop
 	usr/share/applications/kde4/KMail2.desktop
 	usr/share/applications/kde4/kmail_view.desktop
 	usr/share/dbus-1/interfaces/org.kde.kmail.*
+	usr/share/doc/HTML/*/akonadi_*_agent/
+	usr/share/doc/HTML/*/headerthemeeditor/
 	usr/share/doc/HTML/*/kmail/
+	usr/share/doc/HTML/*/kmailcvt/
 	usr/share/icons/hicolor/*/apps/kmail.*
-	usr/share/icons/oxygen/*/apps/kmailcvt.*
-	usr/share/kde4/apps/akonadi_archivemail_agent/
-	usr/share/kde4/apps/akonadi_mailfilter_agent/
+	usr/share/icons/hicolor/*/apps/kmailcvt.*
+	usr/share/kde4/apps/akonadi_*_agent/
+	usr/share/kde4/apps/headerthemeeditor/
 	usr/share/kde4/apps/kconf_update/kmail*
 	usr/share/kde4/apps/kconf_update/mailfilteragent.upd
 	usr/share/kde4/apps/kconf_update/migrate-kmail-filters.pl
@@ -205,8 +207,8 @@ knotes_CONTENTS="
 	usr/share/applications/kde4/knotes.desktop
 	usr/share/dbus-1/interfaces/org.kde.KNotes.*
 	usr/share/doc/HTML/*/knotes/
+	usr/share/icons/hicolor/*/actions/knotes_*
 	usr/share/icons/hicolor/*/apps/knotes.*
-	usr/share/icons/oxygen/*/actions/knotes_*.*
 	usr/share/kde4/apps/knotes/
 	usr/share/kde4/config.kcfg/knoteconfig.kcfg
 	usr/share/kde4/config.kcfg/knotesglobalconfig.kcfg
@@ -242,8 +244,10 @@ kontact_CONTENTS="
 	usr/share/applications/kde4/kontact-admin.desktop
 	usr/share/applications/kde4/Kontact.desktop
 	usr/share/dbus-1/interfaces/org.kde.kontact.KNotes.xml
+	usr/share/doc/HTML/*/importwizard/
 	usr/share/doc/HTML/*/kontact/
 	usr/share/doc/HTML/*/kontact-admin/
+	usr/share/doc/HTML/*/pimsettingexporter/
 	usr/share/icons/hicolor/*/apps/kontact.*
 	usr/share/icons/hicolor/*/apps/kontact-import-wizard.*
 	usr/share/kde4/apps/kontact/
@@ -322,13 +326,16 @@ ktnef_CONTENTS="
 	usr/share/icons/*/*/apps/ktnef.*
 	usr/share/kde4/apps/ktnef/
 "
-libkdepim4_REQUIRES="kdepim-runtime"
-libkdepim4_SUMMARY="KDE PIM suite internal libraries"
-libkdepim4_CONTENTS="
+kdepim_libs_REQUIRES="kdepim-runtime"
+kdepim_libs_OBSOLETS="libkdepim4"
+kdepim_libs_SUMMARY="KDE PIM suite internal libraries"
+kdepim_libs_CONTENTS="
 	etc/postinstall/
 	usr/bin/cygakonadi_next-4.dll
 	usr/bin/cygcalendarsupport-4.dll
+	usr/bin/cygcomposereditorng-4.dll
 	usr/bin/cygeventviews-4.dll
+	usr/bin/cyggrammar-4.dll
 	usr/bin/cygincidenceeditorsng-4.dll
 	usr/bin/cygincidenceeditorsngmobile-4.dll
 	usr/bin/cygkcal_resourceblog-4.dll
@@ -347,13 +354,17 @@ libkdepim4_CONTENTS="
 	usr/bin/cygmessagecore-4.dll
 	usr/bin/cygmessagelist-4.dll
 	usr/bin/cygmessageviewer-4.dll
+	usr/bin/cygpimactivity-4.dll
 	usr/bin/cygpimcommon-4.dll
+	usr/bin/cygsendlater-4.dll
 	usr/bin/cygtemplateparser-4.dll
 	usr/bin/kincidenceeditor.exe
 	usr/lib/akonadi/contact/editorpageplugins/cryptopageplugin.dll
+	usr/lib/kde4/grammar_link.dll
 	usr/lib/kde4/kcal_blog.dll
 	usr/lib/kde4/kcal_remote.dll
 	usr/lib/kde4/kcm_ldap.dll
+	usr/lib/kde4/kcm_pimactivity.dll
 	usr/lib/kde4/ktexteditorkabcbridge.dll
 	usr/lib/kde4/messageviewer_bodypartformatter_application_mstnef.dll
 	usr/lib/kde4/messageviewer_bodypartformatter_text_calendar.dll
@@ -361,10 +372,15 @@ libkdepim4_CONTENTS="
 	usr/lib/kde4/messageviewer_bodypartformatter_text_xdiff.dll
 	usr/lib/kde4/plugins/accessible/messagevieweraccessiblewidgetfactory.dll
 	usr/lib/kde4/plugins/designer/kdepimwidgets.dll
+	usr/lib/kde4/plugins/designer/mailcommonwidgets.dll
+	usr/lib/kde4/plugins/designer/pimcommonwidgets.dll
+	usr/lib/kde4/plugins/grantlee/0.3/grantlee_messageheaderfilters.dll
 	usr/share/dbus-1/interfaces/org.kde.addressbook.service.xml
 	usr/share/dbus-1/interfaces/org.kde.mailtransport.service.xml
 	usr/share/doc/HTML/en/kioslave/news/
+	usr/share/doc/kdepim/
 	usr/share/icons/oxygen/*/mimetypes/x-mail-distribution-list.*
+	usr/share/kde4/apps/composereditor/
 	usr/share/kde4/apps/kconf_update/kpgp-3.1-upgrade-address-data.pl
 	usr/share/kde4/apps/kconf_update/kpgp.upd
 	usr/share/kde4/apps/kdepimwidgets/
@@ -373,20 +389,15 @@ libkdepim4_CONTENTS="
 	usr/share/kde4/apps/messagelist/
 	usr/share/kde4/apps/messageviewer/
 	usr/share/kde4/config/libkleopatrarc
+	usr/share/kde4/config/messageviewer_header_themes.knsrc
 	usr/share/kde4/config.kcfg/customtemplates_kfg.kcfg
 	usr/share/kde4/config.kcfg/templatesconfiguration_kfg.kcfg
+	usr/share/kde4/services/grammar_link.desktop
 	usr/share/kde4/services/kcmldap.desktop
+	usr/share/kde4/services/kcmpimactivity.desktop
 	usr/share/kde4/services/kresources/kcal/
 	usr/share/kde4/servicetypes/calendardecoration.desktop
 	usr/share/kde4/servicetypes/calendarplugin.desktop
 	usr/share/ontology/kde/messagetag.*
-"
-kdepim_strigi_analyzers_SUMMARY="Strigi PIM file analyzers"
-kdepim_strigi_analyzers_OBSOLETES="strigi-analyzer-kdepim"
-kdepim_strigi_analyzers_CONTENTS="
-	usr/lib/strigi/strigiea_ctg.dll
-	usr/lib/strigi/strigiea_ics.dll
-	usr/lib/strigi/strigiea_mail.dll
-	usr/lib/strigi/strigiea_vcf.dll
 "
 PKG_IGNORE="usr/lib/lib*"
