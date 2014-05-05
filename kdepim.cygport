@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kdepim"
-VERSION=4.11.5
+VERSION=4.12.5
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE PIM suite"
@@ -9,9 +9,9 @@ DESCRIPTION="Part of the KDE PIM suite"
 
 PATCH_URI="4.3.4-kabcclient-install.patch"
 
-PKG_NAMES="${NAME} ${NAME}-libs akonadiconsole akregator blogilo kabcclient \
-           kaddressbook kalarm kjots kleopatra kmail knode knotes \
-           konsolekalendar kontact korganizer ktimetracker ktnef"
+PKG_NAMES="${NAME} ${NAME}-libs ${NAME}-console ${NAME}-mobile akonadiconsole \
+           akregator blogilo kaddressbook kalarm kjots kleopatra kmail knode \
+           knotes kontact korganizer ktimetracker ktnef"
 kdepim_mobile_SUMMARY="KDE PIM mobile suite"
 kdepim_mobile_CONTENTS="
 	etc/postinstall/
@@ -70,22 +70,33 @@ blogilo_CONTENTS="
 	usr/share/kde4/config.kcfg/blogilo.kcfg
 	usr/share/doc/blogilo/
 "
-kabcclient_SUMMARY="KDE commandline address book"
-kabcclient_CONTENTS="
+kdepim_console_SUMMARY="KDE PIM command-line applications"
+kdepim_console_OBSOLETES="kabcclient konsolekalendar"
+kdepim_console_CONTENTS="
+	etc/postinstall/
+	usr/bin/calendarjanitor.exe
 	usr/bin/kabc2mutt.exe
 	usr/bin/kabcclient.exe
+	usr/bin/konsolekalendar.exe
+	usr/share/applications/kde4/konsolekalendar.desktop
 	usr/share/doc/HTML/*/kabcclient/
+	usr/share/doc/HTML/*/konsolekalendar/
+	usr/share/icons/hicolor/*/apps/konsolekalendar.*
 	usr/share/man/man1/kabcclient.*
 "
 kaddressbook_SUMMARY="KDE address book"
 kaddressbook_CONTENTS="
 	etc/postinstall/
+	usr/bin/contactthemeeditor.exe
 	usr/bin/cygkaddressbook*
 	usr/bin/kaddressbook.exe
 	usr/lib/kde4/kaddressbookpart.dll
+	usr/share/applications/kde4/contactthemeeditor.desktop
 	usr/share/applications/kde4/kaddressbook.desktop
 	usr/share/icons/hicolor/*/apps/kaddressbook.*
+	usr/share/kde4/apps/contactthemeeditor/
 	usr/share/kde4/apps/kaddressbook/
+	usr/share/kde4/config/kaddressbook_themes.knsrc
 	usr/share/kde4/services/kaddressbookpart.desktop
 "
 kalarm_SUMMARY="KDE alarm and command scheduler"
@@ -145,12 +156,14 @@ kmail_SUMMARY="KDE mail client"
 kmail_CONTENTS="
 	etc/postinstall/
 	usr/bin/akonadi_*_agent.exe
+	usr/bin/cygfolderarchive-4.dll
 	usr/bin/cygkmailprivate-4.dll
 	usr/bin/headerthemeeditor.exe
 	usr/bin/kmail.exe
 	usr/bin/kmailcvt.exe
 	usr/bin/kmail_*.sh
 	usr/bin/ksendemail.exe
+	usr/bin/mboximporter.exe
 	usr/lib/kde4/kcm_kmail.dll
 	usr/lib/kde4/kcm_kpimidentities.dll
 	usr/lib/kde4/kmailpart.dll
@@ -158,6 +171,7 @@ kmail_CONTENTS="
 	usr/share/applications/kde4/headerthemeeditor.desktop
 	usr/share/applications/kde4/KMail2.desktop
 	usr/share/applications/kde4/kmail_view.desktop
+	usr/share/applications/kde4/mboximporter.desktop
 	usr/share/dbus-1/interfaces/org.kde.kmail.*
 	usr/share/doc/HTML/*/akonadi_*_agent/
 	usr/share/doc/HTML/*/headerthemeeditor/
@@ -201,6 +215,7 @@ knode_CONTENTS="
 knotes_SUMMARY="KDE sticky notes"
 knotes_CONTENTS="
 	etc/postinstall/
+	usr/bin/cygknotesprivate-4.dll
 	usr/bin/knotes.exe
 	usr/lib/kde4/kcm_knote.dll
 	usr/lib/kde4/knotes_local.dll
@@ -216,14 +231,6 @@ knotes_CONTENTS="
 	usr/share/kde4/services/kresources/knotes/
 	usr/share/kde4/services/kresources/knotes_manager.desktop
 	usr/share/doc/knotes/
-"
-konsolekalendar_SUMMARY="KDE commandline calendar"
-konsolekalendar_CONTENTS="
-	etc/postinstall/
-	usr/bin/konsolekalendar.exe
-	usr/share/applications/kde4/konsolekalendar.desktop
-	usr/share/doc/HTML/*/konsolekalendar/
-	usr/share/icons/hicolor/*/apps/konsolekalendar.*
 "
 kontact_REQUIRES="akregator kaddressbook kjots kmail knode knotes korganizer ktimetracker ktnef"
 kontact_SUMMARY="KDE PIM application"
@@ -336,6 +343,8 @@ kdepim_libs_CONTENTS="
 	usr/bin/cygcomposereditorng-4.dll
 	usr/bin/cygeventviews-4.dll
 	usr/bin/cyggrammar-4.dll
+	usr/bin/cyggrantleetheme-4.dll
+	usr/bin/cyggrantleethemeeditor-4.dll
 	usr/bin/cygincidenceeditorsng-4.dll
 	usr/bin/cygincidenceeditorsngmobile-4.dll
 	usr/bin/cygkcal_resourceblog-4.dll
@@ -381,6 +390,7 @@ kdepim_libs_CONTENTS="
 	usr/share/doc/kdepim/
 	usr/share/icons/oxygen/*/mimetypes/x-mail-distribution-list.*
 	usr/share/kde4/apps/composereditor/
+	usr/share/kde4/apps/kconf_update/grantleetheme.upd
 	usr/share/kde4/apps/kconf_update/kpgp-3.1-upgrade-address-data.pl
 	usr/share/kde4/apps/kconf_update/kpgp.upd
 	usr/share/kde4/apps/kdepimwidgets/
@@ -388,6 +398,7 @@ kdepim_libs_CONTENTS="
 	usr/share/kde4/apps/libmessageviewer/
 	usr/share/kde4/apps/messagelist/
 	usr/share/kde4/apps/messageviewer/
+	usr/share/kde4/config/ksieve_script.knsrc
 	usr/share/kde4/config/libkleopatrarc
 	usr/share/kde4/config/messageviewer_header_themes.knsrc
 	usr/share/kde4/config.kcfg/customtemplates_kfg.kcfg
