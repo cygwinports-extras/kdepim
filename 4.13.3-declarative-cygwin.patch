@@ -1,0 +1,11 @@
+--- origsrc/kdepim-4.13.3/mobile/lib/kdeclarativemainview.cpp	2014-07-09 07:18:50.000000000 -0500
++++ src/kdepim-4.13.3/mobile/lib/kdeclarativemainview.cpp	2014-09-22 01:07:46.148443200 -0500
+@@ -486,7 +486,7 @@ QAbstractItemModel* KDeclarativeMainView
+ void KDeclarativeMainView::launchAccountWizard()
+ {
+ #ifdef Q_OS_UNIX
+-  const QString inProcessAccountWizard = KStandardDirs::locate( "module", QLatin1String("accountwizard_plugin.so") );
++  const QString inProcessAccountWizard = KStandardDirs::locate( "module", QLatin1String("accountwizard_plugin.dll") );
+   kDebug() << inProcessAccountWizard;
+   if ( !inProcessAccountWizard.isEmpty() ) {
+     QPluginLoader loader( inProcessAccountWizard );

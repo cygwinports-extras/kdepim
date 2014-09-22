@@ -1,13 +1,16 @@
 inherit kde4
 
 NAME="kdepim"
-VERSION=4.12.5
+VERSION=4.13.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE PIM suite"
 DESCRIPTION="Part of the KDE PIM suite"
 
-PATCH_URI="4.3.4-kabcclient-install.patch"
+PATCH_URI="
+	4.3.4-kabcclient-install.patch
+	4.13.3-declarative-cygwin.patch
+"
 
 PKG_NAMES="${NAME} ${NAME}-libs ${NAME}-console ${NAME}-mobile akonadiconsole \
            akregator blogilo kaddressbook kalarm kjots kleopatra kmail knode \
@@ -88,11 +91,13 @@ kaddressbook_SUMMARY="KDE address book"
 kaddressbook_CONTENTS="
 	etc/postinstall/
 	usr/bin/contactthemeeditor.exe
-	usr/bin/cygkaddressbook*
+	usr/bin/cygkaddressbookprivate*.dll
 	usr/bin/kaddressbook.exe
 	usr/lib/kde4/kaddressbookpart.dll
 	usr/share/applications/kde4/contactthemeeditor.desktop
 	usr/share/applications/kde4/kaddressbook.desktop
+	usr/share/applications/kde4/kaddressbook-importer.desktop
+	usr/share/doc/HTML/en/contactthemeeditor/
 	usr/share/icons/hicolor/*/apps/kaddressbook.*
 	usr/share/kde4/apps/contactthemeeditor/
 	usr/share/kde4/apps/kaddressbook/
@@ -153,10 +158,10 @@ kleopatra_CONTENTS="
 	usr/share/kde4/services/kleopatra_*
 "
 kmail_SUMMARY="KDE mail client"
+kmail_REQUIRES="kate kleopatra ktnef"
 kmail_CONTENTS="
 	etc/postinstall/
 	usr/bin/akonadi_*_agent.exe
-	usr/bin/cygfolderarchive-4.dll
 	usr/bin/cygkmailprivate-4.dll
 	usr/bin/headerthemeeditor.exe
 	usr/bin/kmail.exe
@@ -164,6 +169,8 @@ kmail_CONTENTS="
 	usr/bin/kmail_*.sh
 	usr/bin/ksendemail.exe
 	usr/bin/mboximporter.exe
+	usr/bin/sieveeditor.exe
+	usr/bin/storageservicemanager.exe
 	usr/lib/kde4/kcm_kmail.dll
 	usr/lib/kde4/kcm_kpimidentities.dll
 	usr/lib/kde4/kmailpart.dll
@@ -172,11 +179,14 @@ kmail_CONTENTS="
 	usr/share/applications/kde4/KMail2.desktop
 	usr/share/applications/kde4/kmail_view.desktop
 	usr/share/applications/kde4/mboximporter.desktop
+	usr/share/applications/kde4/sieveeditor.desktop
+	usr/share/applications/kde4/storageservicemanager.desktop
 	usr/share/dbus-1/interfaces/org.kde.kmail.*
 	usr/share/doc/HTML/*/akonadi_*_agent/
 	usr/share/doc/HTML/*/headerthemeeditor/
 	usr/share/doc/HTML/*/kmail/
 	usr/share/doc/HTML/*/kmailcvt/
+	usr/share/doc/HTML/*/sieveeditor/
 	usr/share/icons/hicolor/*/apps/kmail.*
 	usr/share/icons/hicolor/*/apps/kmailcvt.*
 	usr/share/kde4/apps/akonadi_*_agent/
@@ -188,6 +198,8 @@ kmail_CONTENTS="
 	usr/share/kde4/apps/kconf_update/upgrade-transport.pl
 	usr/share/kde4/apps/kmail2/
 	usr/share/kde4/apps/kmailcvt/
+	usr/share/kde4/apps/sieveeditor/
+	usr/share/kde4/apps/storageservicemanager/
 	usr/share/kde4/config/kmail.antispamrc
 	usr/share/kde4/config/kmail.antivirusrc
 	usr/share/kde4/config.kcfg/kmail.kcfg
@@ -218,21 +230,21 @@ knotes_CONTENTS="
 	usr/bin/cygknotesprivate-4.dll
 	usr/bin/knotes.exe
 	usr/lib/kde4/kcm_knote.dll
-	usr/lib/kde4/knotes_local.dll
+	usr/lib/kde4/kcm_knotessummary.dll
 	usr/share/applications/kde4/knotes.desktop
 	usr/share/dbus-1/interfaces/org.kde.KNotes.*
 	usr/share/doc/HTML/*/knotes/
 	usr/share/icons/hicolor/*/actions/knotes_*
 	usr/share/icons/hicolor/*/apps/knotes.*
+	usr/share/kde4/apps/kconf_update/noteglobalsettings.upd
 	usr/share/kde4/apps/knotes/
-	usr/share/kde4/config.kcfg/knoteconfig.kcfg
+	usr/share/kde4/config/knotes_printing_theme.knsrc
 	usr/share/kde4/config.kcfg/knotesglobalconfig.kcfg
+	usr/share/kde4/services/kcmknotessummary.desktop
 	usr/share/kde4/services/knote_config_*
-	usr/share/kde4/services/kresources/knotes/
-	usr/share/kde4/services/kresources/knotes_manager.desktop
 	usr/share/doc/knotes/
 "
-kontact_REQUIRES="akregator kaddressbook kjots kmail knode knotes korganizer ktimetracker ktnef"
+kontact_REQUIRES="akregator kaddressbook kjots kmail knode knotes korganizer ktimetracker"
 kontact_SUMMARY="KDE PIM application"
 kontact_CONTENTS="
 	etc/postinstall/
@@ -302,8 +314,6 @@ korganizer_CONTENTS="
 	usr/share/kde4/services/korganizer_*
 	usr/share/kde4/services/webcal.protocol
 	usr/share/kde4/servicetypes/dbuscalendar.desktop
-	usr/share/kde4/servicetypes/korganizerpart.desktop
-	usr/share/kde4/servicetypes/korgprintplugin.desktop
 	usr/share/doc/korganizer/
 "
 ktimetracker_SUMMARY="KDE time tracker"
@@ -334,7 +344,7 @@ ktnef_CONTENTS="
 	usr/share/kde4/apps/ktnef/
 "
 kdepim_libs_REQUIRES="kdepim-runtime"
-kdepim_libs_OBSOLETS="libkdepim4"
+kdepim_libs_OBSOLETES="libkdepim4"
 kdepim_libs_SUMMARY="KDE PIM suite internal libraries"
 kdepim_libs_CONTENTS="
 	etc/postinstall/
@@ -342,11 +352,11 @@ kdepim_libs_CONTENTS="
 	usr/bin/cygcalendarsupport-4.dll
 	usr/bin/cygcomposereditorng-4.dll
 	usr/bin/cygeventviews-4.dll
-	usr/bin/cyggrammar-4.dll
 	usr/bin/cyggrantleetheme-4.dll
 	usr/bin/cyggrantleethemeeditor-4.dll
 	usr/bin/cygincidenceeditorsng-4.dll
 	usr/bin/cygincidenceeditorsngmobile-4.dll
+	usr/bin/cygkaddressbookgrantlee-4.dll
 	usr/bin/cygkcal_resourceblog-4.dll
 	usr/bin/cygkcal_resourceremote-4.dll
 	usr/bin/cygkdepim-4.dll
@@ -363,17 +373,15 @@ kdepim_libs_CONTENTS="
 	usr/bin/cygmessagecore-4.dll
 	usr/bin/cygmessagelist-4.dll
 	usr/bin/cygmessageviewer-4.dll
-	usr/bin/cygpimactivity-4.dll
+	usr/bin/cygnoteshared-4.dll
 	usr/bin/cygpimcommon-4.dll
 	usr/bin/cygsendlater-4.dll
 	usr/bin/cygtemplateparser-4.dll
 	usr/bin/kincidenceeditor.exe
 	usr/lib/akonadi/contact/editorpageplugins/cryptopageplugin.dll
-	usr/lib/kde4/grammar_link.dll
 	usr/lib/kde4/kcal_blog.dll
 	usr/lib/kde4/kcal_remote.dll
 	usr/lib/kde4/kcm_ldap.dll
-	usr/lib/kde4/kcm_pimactivity.dll
 	usr/lib/kde4/ktexteditorkabcbridge.dll
 	usr/lib/kde4/messageviewer_bodypartformatter_application_mstnef.dll
 	usr/lib/kde4/messageviewer_bodypartformatter_text_calendar.dll
@@ -398,17 +406,16 @@ kdepim_libs_CONTENTS="
 	usr/share/kde4/apps/libmessageviewer/
 	usr/share/kde4/apps/messagelist/
 	usr/share/kde4/apps/messageviewer/
+	usr/share/kde4/apps/sieve/
 	usr/share/kde4/config/ksieve_script.knsrc
 	usr/share/kde4/config/libkleopatrarc
 	usr/share/kde4/config/messageviewer_header_themes.knsrc
 	usr/share/kde4/config.kcfg/customtemplates_kfg.kcfg
 	usr/share/kde4/config.kcfg/templatesconfiguration_kfg.kcfg
-	usr/share/kde4/services/grammar_link.desktop
+	usr/share/icons/hicolor/*/apps/kdepim-*.png
 	usr/share/kde4/services/kcmldap.desktop
-	usr/share/kde4/services/kcmpimactivity.desktop
 	usr/share/kde4/services/kresources/kcal/
 	usr/share/kde4/servicetypes/calendardecoration.desktop
 	usr/share/kde4/servicetypes/calendarplugin.desktop
-	usr/share/ontology/kde/messagetag.*
 "
 PKG_IGNORE="usr/lib/lib*"
