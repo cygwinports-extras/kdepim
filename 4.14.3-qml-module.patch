@@ -1,0 +1,18 @@
+--- origsrc/kdepim-4.14.3/mobile/api/mail/CMakeLists.txt	2014-11-06 02:45:47.000000000 -0600
++++ src/kdepim-4.14.3/mobile/api/mail/CMakeLists.txt	2014-11-19 14:12:24.767781000 -0600
+@@ -21,7 +21,7 @@ INCLUDE_DIRECTORIES(
+ 
+ qt4_automoc(${mail_SRCS})
+ 
+-kde4_add_library(mailplugin SHARED ${mail_SRCS})
++kde4_add_library(mailplugin MODULE ${mail_SRCS})
+ 
+ target_link_libraries(mailplugin
+ 
+@@ -34,4 +34,4 @@ target_link_libraries(mailplugin
+ )
+ 
+ install(TARGETS mailplugin DESTINATION ${IMPORTS_INSTALL_DIR}/org/kde/pim/mail)
+-install(FILES qmldir DESTINATION ${IMPORTS_INSTALL_DIR}/org/kde/pim/mail)
+\ No newline at end of file
++install(FILES qmldir DESTINATION ${IMPORTS_INSTALL_DIR}/org/kde/pim/mail)

@@ -10,7 +10,9 @@ DESCRIPTION="Part of the KDE PIM suite"
 PATCH_URI="
 	4.3.4-kabcclient-install.patch
 	4.13.3-declarative-cygwin.patch
+	4.14.3-qml-module.patch
 "
+
 
 PKG_NAMES="${NAME} ${NAME}-libs ${NAME}-console ${NAME}-mobile akonadiconsole \
            akregator blogilo kaddressbook kalarm kjots kleopatra kmail knode \
@@ -20,7 +22,7 @@ kdepim_mobile_CONTENTS="
 	etc/postinstall/
 	usr/bin/cygkdepimmobileui-4.dll
 	usr/bin/*-mobile.exe
-	usr/lib/kde4/imports/org/kde/pim/mobileui/
+	usr/lib/kde4/imports/org/kde/pim/
 	usr/share/applications/kde4/*-mobile.desktop
 	usr/share/icons/hicolor/*/apps/*-mobile.*
 	usr/share/icons/hicolor/*/apps/*-mobile-*.*
@@ -262,6 +264,7 @@ kontact_CONTENTS="
 	usr/share/applications/kde4/importwizard.desktop
 	usr/share/applications/kde4/kontact-admin.desktop
 	usr/share/applications/kde4/Kontact.desktop
+	usr/share/applications/kde4/pimsettingexporter.desktop
 	usr/share/dbus-1/interfaces/org.kde.kontact.KNotes.xml
 	usr/share/doc/HTML/*/importwizard/
 	usr/share/doc/HTML/*/kontact/
@@ -352,6 +355,7 @@ kdepim_libs_CONTENTS="
 	usr/bin/cygcalendarsupport-4.dll
 	usr/bin/cygcomposereditorng-4.dll
 	usr/bin/cygeventviews-4.dll
+	usr/bin/cygfollowupreminder-4.dll
 	usr/bin/cyggrantleetheme-4.dll
 	usr/bin/cyggrantleethemeeditor-4.dll
 	usr/bin/cygincidenceeditorsng-4.dll
