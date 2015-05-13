@@ -353,6 +353,7 @@ kdepim_libs_CONTENTS="
 	etc/postinstall/
 	usr/bin/cygakonadi_next-4.dll
 	usr/bin/cygcalendarsupport-4.dll
+	usr/bin/cygcalendarsupportcollectionpage-4.dll
 	usr/bin/cygcomposereditorng-4.dll
 	usr/bin/cygeventviews-4.dll
 	usr/bin/cygfollowupreminder-4.dll
