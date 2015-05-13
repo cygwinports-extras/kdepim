@@ -1,12 +1,12 @@
 inherit kde4
 
 NAME="kdepim"
-VERSION=4.14.3
+VERSION=4.14.7
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE PIM suite"
 DESCRIPTION="Part of the KDE PIM suite"
-
+SRC_URI="mirror://kde/stable/applications/15.04.0/src/${NAME}-${VERSION}.tar.xz"
 PATCH_URI="
 	4.3.4-kabcclient-install.patch
 	4.13.3-declarative-cygwin.patch
@@ -395,7 +395,7 @@ kdepim_libs_CONTENTS="
 	usr/lib/kde4/plugins/designer/kdepimwidgets.dll
 	usr/lib/kde4/plugins/designer/mailcommonwidgets.dll
 	usr/lib/kde4/plugins/designer/pimcommonwidgets.dll
-	usr/lib/kde4/plugins/grantlee/0.3/grantlee_messageheaderfilters.dll
+	usr/lib/kde4/plugins/grantlee/
 	usr/share/dbus-1/interfaces/org.kde.addressbook.service.xml
 	usr/share/dbus-1/interfaces/org.kde.mailtransport.service.xml
 	usr/share/doc/HTML/en/kioslave/news/
