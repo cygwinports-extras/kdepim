@@ -346,7 +346,7 @@ ktnef_CONTENTS="
 	usr/share/icons/*/*/apps/ktnef.*
 	usr/share/kde4/apps/ktnef/
 "
-kdepim_libs_REQUIRES="kdepim-runtime"
+kdepim_libs_REQUIRES="kde-runtime kdepim-runtime"
 kdepim_libs_OBSOLETES="libkdepim4"
 kdepim_libs_SUMMARY="KDE PIM suite internal libraries"
 kdepim_libs_CONTENTS="
