@@ -160,7 +160,7 @@ kleopatra_CONTENTS="
 	usr/share/kde4/services/kleopatra_*
 "
 kmail_SUMMARY="KDE mail client"
-kmail_REQUIRES="kate kleopatra ktnef"
+kmail_REQUIRES="kate4-part kleopatra ktnef"
 kmail_CONTENTS="
 	etc/postinstall/
 	usr/bin/akonadi_*_agent.exe
