@@ -60,6 +60,7 @@ akregator_CONTENTS="
 	usr/share/doc/akregator/
 "
 blogilo_SUMMARY="KDE blogging application"
+blogilo_REQUIRES="kate4-part"
 blogilo_CONTENTS="
 	etc/postinstall/
 	usr/bin/blogilo.exe
